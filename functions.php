@@ -13,3 +13,8 @@ if ( defined('WP_COMMENTS') && WP_COMMENTS == false ){
     // Disable wordpress comment to avoid spam
 	include get_template_directory() . '/config/wordpress/comments-configuration.functions.php';
 }
+
+if ( defined('WP_BLOG') && WP_BLOG == false ){ 
+    // Disable wordpress blog environment
+	include get_template_directory() . '/config/wordpress/blog-configuration.functions.php';
+}
