@@ -1,0 +1,24 @@
+/**
+ * <body>
+ */
+body {
+    background-color: var(--color__white);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font__copy);
+    font-weight: var(--font__copy--weight);
+	font-size: var(--font__copy--size);
+    line-height: var(--font__copy--line-height);
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &.admin-bar {
+        min-height: calc(100vh - var(--adminbar__height--narrow));
+
+        @media (--desktop) {
+            min-height: calc(100vh - var(--adminbar__height));
+        }
+    }
+}

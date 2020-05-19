@@ -1,0 +1,61 @@
+/**
+ * Custom Properties
+ *
+ * Defining custom properties
+ * usage: `color: var(--color-primary);`
+ */
+
+// SCSS variables
+$mq-mobile: 36em;
+$mq-tablet: 48em;
+$mq-desktop: 62em;
+$mq-wide: 75em;
+$global-container-padding: 1.25em;
+
+:root {
+	// Global paddings
+	--container-padding: #{$global-container-padding};
+    // Font stacks
+    --font__copy: sans-serif;
+	--font__copy--weight: 300;
+	--font__copy--size: 1em;
+	--font__copy--line-height: 1.5;
+    --font__heading: sans-serif;
+    // Color by name
+    --color__black: #000;
+    --color__white: #fff;
+    --color__grey: #999;
+    --color__red: #721c24;
+    --color__red--light: #f8d7da;
+    --color__yellow: #856404;
+    --color__yellow--light: #fff3cd;
+    --color__green: #155724;
+    --color__green--light: #d4edda;
+    --color__blue: #004085;
+    --color__blue--light: #cce5ff;
+    // Color by usage
+    --color__primary: var(--color__black);
+    --color__secondary: var(--color__grey);
+    --color__tertiary: var(--color__white);
+    --color__accent:  var(--color__yellow);
+    --color__links: var(--color__black);
+    --color__error: var(--color__red);
+    --color__error--light: var(--color__red--light);
+    --color__warning: var(--color__yellow);
+    --color__warning--light: var(--color__yellow--light);
+    --color__success: var(--color__green);
+    --color__success--light: var(--color__green--light);
+    --color__notice: var(--color__blue);
+    --color__notice--light: var(--color__blue--light);
+    // Media Queries
+    --mq__mobile: #{$mq-mobile};
+    --mq__tablet: #{$mq-tablet};
+    --mq__desktop: #{$mq-desktop};
+    --mq__wide: #{$mq-wide};
+    // Animation
+    --animation__duration: 400ms;
+    --animation__timing-function: ease-in-out;
+    // Misc
+    --adminbar__height--narrow: 32px;
+    --adminbar__height: 46px; 
+}

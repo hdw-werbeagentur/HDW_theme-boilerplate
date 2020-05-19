@@ -1,0 +1,18 @@
+.align {
+
+    &left {
+        float: left;
+    }
+
+    &right {
+        float: right;
+    }
+
+    &wide {
+        @extend %container--wide;
+    }
+
+    &full {
+        @extend %container--full;
+    }
+}
