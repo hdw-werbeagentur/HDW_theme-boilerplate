@@ -1,0 +1,42 @@
+<?php
+/**
+ * Styleguide template
+ * Shows all html elements with stylings
+ * 
+ *
+ * Talented Monkeys/Monkey Theme 
+ */
+
+
+/**
+ * Header
+ */
+get_template_part('resources/views/header', get_post_type());
+
+
+/**
+ * Content
+ */
+?>
+<div class="content">
+
+    <div class="container">
+
+        <main class="main">
+
+            <?php
+            the_post();
+            get_template_part('resources/views/contents/content', 'styleguide');
+            ?>
+
+        </main>
+
+    </div>
+
+</div>
+
+<?php
+/**
+ * Footer
+ */
+get_template_part('resources/views/footer', get_post_type());

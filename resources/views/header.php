@@ -2,9 +2,8 @@
 /**
  * Header
  *
- * RalfHortt\Aurora
- * @version 1.0.0
- */
+ * Talented Monkeys/Monkey Theme
+ */ 
 
 
 /**

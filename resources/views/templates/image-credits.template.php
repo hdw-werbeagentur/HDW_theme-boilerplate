@@ -1,4 +1,8 @@
-<?php /* Template Name: Image Credits */ ?>
+<?php 
+/* 
+*   Template Name: Image Credits 
+*/ 
+?>
 
 <?php
 // Get all image credits
