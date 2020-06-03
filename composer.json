@@ -1,0 +1,26 @@
+{
+    "name": "ralfhortt/wordpress-theme-boilerplate",
+    "description": "A WordPress Boilerplate Theme by Ralf Hortt",
+    "type": "wordpress-theme",
+    "autoload": {
+        "psr-4": {
+            "RalfHortt\\Aurora\\": "src/classes/"
+        },
+        "files": [
+            "functions.custom.php",
+            "functions.helpers.php"
+        ]
+    },
+    "require": {
+        "horttcore/wp-customizer": "*",
+        "horttcore/wp-assets": "*",
+        "ralfhortt/wp-template-loader": "*",
+        "ralfhortt/wp-image-sizes": "*",
+        "ralfhortt/wp-content-width": "*"
+    },
+    "scripts": {
+        "post-create-project-cmd": "composer run-script replace-textdomain && composer run-script copy-env",
+        "replace-textdomain": "DIR=$(basename $PWD); LC_ALL=C find ./ -not \\( -path \".//vendor/*\" -o -path \".//node_modules/*\" -o -path \".//.git/*\" \\) -type f \\( -iname '*.js' -o -iname '*.php' -o -iname '*.css' \\) -exec sed -i '' -e \"s/TEXTDOMAIN/${DIR}/g\" {} \\;",
+        "copy-env": "cp .env.example .env"
+    }
+}
