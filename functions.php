@@ -150,6 +150,10 @@ if ( defined('WP_BLOG') && WP_BLOG == false ){
 	include get_template_directory() . '/config/wordpress/blog-configuration.functions.php';
 }
 
+if (defined('ACF_PRO_KEY') && ACF_PRO_KEY != '') {
+    // Activate ACF Pro
+    include get_template_directory() . '/config/wordpress/acf-pro-activation.functions.php';
+}
 /**
  * ------------------------------------------------------------------------------
  * Register custom post types
