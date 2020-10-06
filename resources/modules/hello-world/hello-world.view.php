@@ -1,0 +1,1 @@
+<h1><?= sprintf(__('This is the 1%', 'monkey-theme'), $moduleName); ?></h1>
