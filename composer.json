@@ -2,7 +2,7 @@
     "name": "talented-monkeys/monkey-theme",
     "description": "A WordPress Boilerplate Theme by Talented Monkeys",
     "homepage": "https://monkey-theme.dev",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "type": "wordpress-theme",
     "minimum-stability": "dev",
     "license": "MIT",
@@ -19,10 +19,7 @@
         }
       ],
     "autoload": {
-        "files": [
-            "functions.custom.php",
-            "functions.helpers.php"
-        ]
+        "files": []
     },
     "require": {
         "horttcore/wp-customizer": "*",
