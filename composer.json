@@ -1,6 +1,8 @@
 {
     "name": "talented-monkeys/monkey-theme",
     "description": "A WordPress Boilerplate Theme by Talented Monkeys",
+    "homepage": "https://monkey-theme.dev",
+    "version": "0.0.1",
     "type": "wordpress-theme",
     "minimum-stability": "dev",
     "license": "MIT",
