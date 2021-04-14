@@ -1,13 +1,13 @@
-<?php 
-/* 
-*   Template Name: Image Credits 
-*/ 
+<?php
+/*
+*   Template Name: Image Credits
+*/
 ?>
 
 <?php
 // Get all image credits
 global $post;
-$args = array( 
+$args = array(
 	'post_type'         => 'attachment',
 	'post_status'       => 'inherit',
 	'posts_per_page'    => '-1',
@@ -45,9 +45,9 @@ while( $images->have_posts() ): $images->the_post(); global $post;
 
     $imageCreditSourceSlug = get_post_meta($post->ID, 'attachment_source')[0];
     $imageCreditThumbnail = wp_get_attachment_image($post->ID);
-    $imageCreditAuthor = (get_post_meta($post->ID, 'attachment_author')[0] != '') ? get_post_meta($post->ID, 'attachment_author')[0] : __('Author', 'monkey-theme');
+    $imageCreditAuthor = (get_post_meta($post->ID, 'attachment_author')[0] != '') ? get_post_meta($post->ID, 'attachment_author')[0] : __('Author', 'TEXTDOMAIN');
     $imageCreditUrl = (get_post_meta($post->ID, 'attachment_url')[0] != '') ? get_post_meta($post->ID, 'attachment_url')[0] : '#';
-    $imageCreditName = (get_post_meta($post->ID, 'attachment_name')[0] != '') ? get_post_meta($post->ID, 'attachment_name')[0] : __('Attachment Name', 'monkey-theme');
+    $imageCreditName = (get_post_meta($post->ID, 'attachment_name')[0] != '') ? get_post_meta($post->ID, 'attachment_name')[0] : __('Attachment Name', 'TEXTDOMAIN');
 
     if($imageCreditSourceTitle != $imageCreditSourceSlug) {
 
@@ -59,7 +59,7 @@ while( $images->have_posts() ): $images->the_post(); global $post;
         // Start image list for new source
         echo "<section class='media-provider media-provider__$imageCreditSourceSlug'><h2>$mediaCreditsSources[$imageCreditSourceSlug]</h2>";
 
-        // open list 
+        // open list
         echo '<ul>';
 
         $imageCreditSourceTitle = $imageCreditSourceSlug;
@@ -73,8 +73,8 @@ while( $images->have_posts() ): $images->the_post(); global $post;
         </li>
     ";
 
-endwhile; 
-    
+endwhile;
+
 // close list | DO NOT REMOVE
 echo '</ul></section>';
 

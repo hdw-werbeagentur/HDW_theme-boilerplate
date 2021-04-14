@@ -2,7 +2,7 @@
     "name": "talented-monkeys/monkey-theme",
     "description": "A WordPress Boilerplate Theme by Talented Monkeys",
     "homepage": "https://monkey-theme.dev",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "type": "wordpress-theme",
     "minimum-stability": "dev",
     "license": "MIT",
@@ -34,6 +34,7 @@
     "scripts": {
         "post-create-project-cmd": "composer run-script replace-textdomain && composer run-script copy-env",
         "replace-textdomain": "DIR=$(basename $PWD); LC_ALL=C find ./ -not \\( -path \".//vendor/*\" -o -path \".//node_modules/*\" -o -path \".//.git/*\" \\) -type f \\( -iname '*.js' -o -iname '*.php' -o -iname '*.css' \\) -exec sed -i '' -e \"s/TEXTDOMAIN/${DIR}/g\" {} \\;",
+        "initial-replace-textdomain": "DIR=$(cat .project-name); LC_ALL=C find ./ -not \\( -path \".//vendor/*\" -o -path \".//node_modules/*\" -o -path \".//.git/*\" \\) -type f \\( -iname '*.js' -o -iname '*.php' -o -iname '*.css' \\) -exec sed -i '' -e \"s/TEXTDOMAIN/${DIR}/g\" {} \\;",
         "copy-env": "cp .env.example .env"
     }
 }
