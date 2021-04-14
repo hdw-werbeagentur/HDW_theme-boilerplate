@@ -1,11 +1,22 @@
 {
-    "name": "ralfhortt/wordpress-theme-boilerplate",
-    "description": "A WordPress Boilerplate Theme by Ralf Hortt",
+    "name": "talented-monkeys/monkey-theme",
+    "description": "A WordPress Boilerplate Theme by Talented Monkeys",
     "type": "wordpress-theme",
-    "autoload": {
-        "psr-4": {
-            "RalfHortt\\Aurora\\": "src/classes/"
+    "minimum-stability": "dev",
+    "license": "MIT",
+      "authors": [
+        {
+          "name": "Anthony Spross",
+          "email": "anthony@talented-monkeys.com",
+          "homepage": "https://www.anthony-spross.de"
         },
+        {
+          "name": "Tobias Feld",
+          "email": "tobias@talented-monkeys.com",
+          "homepage": "https://www.tobias-feld.de"
+        }
+      ],
+    "autoload": {
         "files": [
             "functions.custom.php",
             "functions.helpers.php"
