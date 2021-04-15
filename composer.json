@@ -2,7 +2,7 @@
     "name": "talented-monkeys/monkey-theme",
     "description": "A WordPress Boilerplate Theme by Talented Monkeys",
     "homepage": "https://monkey-theme.dev",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "type": "wordpress-theme",
     "minimum-stability": "dev",
     "license": "MIT",
@@ -32,6 +32,9 @@
         "post-create-project-cmd": "composer run-script replace-textdomain && composer run-script copy-env",
         "replace-textdomain": "DIR=$(basename $PWD); LC_ALL=C find ./ -not \\( -path \".//vendor/*\" -o -path \".//node_modules/*\" -o -path \".//.git/*\" \\) -type f \\( -iname '*.js' -o -iname '*.php' -o -iname '*.css' \\) -exec sed -i '' -e \"s/TEXTDOMAIN/${DIR}/g\" {} \\;",
         "initial-replace-textdomain": "DIR=$(cat .project-name); LC_ALL=C find ./ -not \\( -path \".//vendor/*\" -o -path \".//node_modules/*\" -o -path \".//.git/*\" \\) -type f \\( -iname '*.js' -o -iname '*.php' -o -iname '*.css' \\) -exec sed -i '' -e \"s/TEXTDOMAIN/${DIR}/g\" {} \\;",
-        "copy-env": "cp .env.example .env"
+        "copy-env": "cp .env.example .env",
+        "add-acf-module": [
+          "MODULE=$(read -p 'How should be the module named?: ' MODULENAME && echo $MODULENAME); (cd resources/modules/ && composer create-project monkey-theme/acf-module-boilerplate ${MODULE});"
+        ]
     }
 }
