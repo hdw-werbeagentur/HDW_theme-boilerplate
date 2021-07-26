@@ -1,10 +1,10 @@
 {
-    "name": "monkey-theme",
-    "description": "A WordPress Boilerplate Theme by Talented Monkeys",
-    "version": "0.0.6",
-    "author": "Anthony Spross <anthony@talented-monkeys.com, Tobias Feld <tobias@talented-monkeys.com",
+    "name": "hdw-wordpress-theme",
+    "description": "A WordPress Boilerplate Theme by HDW",
+    "version": "0.0.1 ",
+    "author": "Anthony Spross <a.spross@hdw1.de, Tobias Feld <t.feld@hdw1.de",
     "license": "MIT",
-    "homepage": "https://monkey-theme.dev",
+    "homepage": "https://www.hdw.dev",
     "scripts": {
         "default": "cross-env gulp",
         "dev": "cross-env gulp && cross-env bower install --allow-root",

@@ -1,23 +1,28 @@
 {
-    "name": "talented-monkeys/monkey-theme",
+    "name": "hdw-werbeagentur/hdw-wordpress-theme",
     "description": "A WordPress Boilerplate Theme by Talented Monkeys",
-    "homepage": "https://monkey-theme.dev",
-    "version": "0.0.6",
+    "homepage": "https://www.hdw.dev",
+    "version": "0.0.1",
     "type": "wordpress-theme",
     "minimum-stability": "dev",
     "license": "MIT",
-      "authors": [
-        {
-          "name": "Anthony Spross",
-          "email": "anthony@talented-monkeys.com",
-          "homepage": "https://www.anthony-spross.de"
-        },
-        {
-          "name": "Tobias Feld",
-          "email": "tobias@talented-monkeys.com",
-          "homepage": "https://www.tobias-feld.de"
-        }
-      ],
+    "authors": [
+      {
+        "name": "Anthony Spross",
+        "email": "a.spross@hdw1.de",
+        "homepage": "https://www.hdw1.de/agentur/unser-team/anthony-spross/"
+      },
+      {
+        "name": "Tobias Feld",
+        "email": "t.feld@hdw1.de",
+        "homepage": "https://www.hdw1.de/agentur/unser-team/tobias-feld/"
+      },
+      {
+        "name": "Sven Stuppi",
+        "email": "s.stuppi@hdw1.de",
+        "homepage": "https://www.hdw1.de/agentur/unser-team/sven-stuppi/"
+      }
+    ],
     "autoload": {
         "files": []
     },
