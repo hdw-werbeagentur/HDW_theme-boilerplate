@@ -1,8 +1,8 @@
 ![https://www.hdw.dev](https://www.hdw1.de/hdw-werbeagentur/uploads/2021/07/hdw-wordpress-theme-boilerplate.jpg)
 
-[![CSS 3](https://img.shields.io/badge/CSS-3-orange?style=for-the-badge&logo=CSS3)](https://www.hdw.dev/hdw-wordpress-core/docs/requirements)
-[![HTML 5](https://img.shields.io/badge/HTML-5-blue?style=for-the-badge&logo=HTML5)](https://www.hdw.dev/hdw-wordpress-core/docs/requirements)
-[![GULP 4.0.0](https://img.shields.io/badge/GULP-4.0.0-orange?style=for-the-badge&logo=gulp)](https://www.hdw.dev/hdw-wordpress-core/docs/requirements)
+[![CSS 3](https://img.shields.io/badge/CSS-3-2965f1?style=for-the-badge&logo=CSS3)](https://www.hdw.dev/hdw-wordpress-core/docs/requirements)
+[![HTML 5](https://img.shields.io/badge/HTML-5-e96228?style=for-the-badge&logo=HTML5)](https://www.hdw.dev/hdw-wordpress-core/docs/requirements)
+[![GULP 4.0.0](https://img.shields.io/badge/GULP-4.0.0-e44b4c?style=for-the-badge&logo=gulp)](https://www.hdw.dev/hdw-wordpress-core/docs/requirements)
 [![DOCS](https://img.shields.io/badge/DOCS-Online-lightgrey?style=for-the-badge&logo=Read%20the%20Docs)](https://www.hdw.dev/hdw-wordpress-core/docs)
 
 # HDW_theme-boilerplate
@@ -12,6 +12,10 @@
 
 * PHP >= 7.4.3
 * Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
+* Node
+* NPM
+* BOWER
+* GULP
 
 ## Installation
 

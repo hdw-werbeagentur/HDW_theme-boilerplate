@@ -3,11 +3,12 @@
   "description": "A WordPress Boilerplate Theme by Talented Monkeys",
   "main": "",
   "authors": [
-    "Anthony Spross <anthony@talented-monkeys.com",
-    "Tobias Feld <tobias@talented-monkeys.com"
+    "Anthony Spross <a.spross@hdw1.de",
+    "Tobias Feld <t.feld@hdw1.de",
+    "Sven Stuppi <s.stuppi@hdw1.de"
   ],
   "license": "MIT",
-  "homepage": "https://monkey-theme.dev",
+  "homepage": "https://www.hdw.dev",
   "ignore": [
     "**/.*",
     "node_modules",
