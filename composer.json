@@ -28,7 +28,7 @@
     },
     "require": {
         "horttcore/wp-customizer": "*",
-        "horttcore/wp-assets": "*",
+        "ralfhortt/wp-assets": "*",
         "ralfhortt/wp-template-loader": "*",
         "ralfhortt/wp-image-sizes": "*",
         "ralfhortt/wp-content-width": "*"
