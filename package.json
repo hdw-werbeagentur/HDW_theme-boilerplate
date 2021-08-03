@@ -7,7 +7,7 @@
     "homepage": "https://www.hdw.dev",
     "scripts": {
         "default": "cross-env gulp",
-        "dev": "cross-env gulp && cross-env bower install --allow-root",
+        "dev": "cross-env gulp build && cross-env bower install --allow-root && cross-env gulp watch",
         "watch": "cross-env gulp watch",
         "build": "cross-env gulp build && cross-env bower install --allow-root",
         "fonts": "cross-env gulp fonts",
