@@ -18,7 +18,9 @@
         "php:lint": "cross-env ./vendor/bin/phpcs .",
         "php:fix": "cross-env phpcbf ./",
         "lint": "cross-env npm run css:styles && cross-env npm run js:lint",
-        "fix": "npm run css:fix && npm run js:fix"
+        "fix": "npm run css:fix && npm run js:fix",
+        "process-rename": "rename",
+        "process-replace": "rexreplace"
     },
     "devDependencies": {
         "@babel/preset-env": "^7.11.5",
@@ -44,7 +46,9 @@
         "postcss-easing-gradients": "^3.0.1",
         "stylelint": "^13.7.2",
         "stylelint-order": "^4.1.0",
-        "stylelint-scss": "^3.18.0"
+        "stylelint-scss": "^3.18.0",
+        "rename-cli": "^6.2.1",
+        "rexreplace": "^6.1.1"
     },
     "dependencies": {
         "gulp-htmlmin": "^5.0.1",
