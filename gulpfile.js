@@ -62,8 +62,8 @@ function sync(done) {
         proxy: process.env.HOST,
         notify: false,
         files: [
-            `${path.css.dest}/app.css`,
-            `${path.js.dest}/app.js`,
+            `${path.css.dest}/app.min.css`,
+            `${path.js.dest}/app.min.js`,
             `${path.img.dest}/**.*`
         ]
     });
