@@ -4,55 +4,23 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "251f0a6f85695a27837a70911fee0761",
+    "content-hash": "4e65608501169ff981589037710bd916",
     "packages": [
         {
-            "name": "horttcore/wp-assets",
-            "version": "2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Horttcore/wp-assets.git",
-                "reference": "abe562d3a7a6b07eddea6833e45568042fa4268f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Horttcore/wp-assets/zipball/abe562d3a7a6b07eddea6833e45568042fa4268f",
-                "reference": "abe562d3a7a6b07eddea6833e45568042fa4268f",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "RalfHortt\\Assets\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ralf Hortt",
-                    "email": "me@horttcore.de"
-                }
-            ],
-            "description": "A helper package for working with the WordPress assets",
-            "time": "2020-03-27T08:06:12+00:00"
-        },
-        {
             "name": "horttcore/wp-customizer",
-            "version": "2.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Horttcore/wp-customizer.git",
-                "reference": "e71109aea56738151a028b7d25bddae488dde235"
+                "reference": "f5cd6d6856692dfec705ec6ef3978135fa0bf700"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Horttcore/wp-customizer/zipball/e71109aea56738151a028b7d25bddae488dde235",
-                "reference": "e71109aea56738151a028b7d25bddae488dde235",
+                "url": "https://api.github.com/repos/Horttcore/wp-customizer/zipball/f5cd6d6856692dfec705ec6ef3978135fa0bf700",
+                "reference": "f5cd6d6856692dfec705ec6ef3978135fa0bf700",
                 "shasum": ""
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -70,11 +38,52 @@
                 }
             ],
             "description": "A helper package for working with the WordPress Customizer",
-            "time": "2019-09-18T20:26:55+00:00"
+            "support": {
+                "issues": "https://github.com/Horttcore/wp-customizer/issues",
+                "source": "https://github.com/Horttcore/wp-customizer/tree/master"
+            },
+            "time": "2019-11-16T17:18:32+00:00"
+        },
+        {
+            "name": "ralfhortt/wp-assets",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Horttcore/wp-assets.git",
+                "reference": "00807bac5d30eeb82fb9ad3613c63f061ced9422"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Horttcore/wp-assets/zipball/00807bac5d30eeb82fb9ad3613c63f061ced9422",
+                "reference": "00807bac5d30eeb82fb9ad3613c63f061ced9422",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RalfHortt\\Assets\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ralf Hortt",
+                    "email": "me@horttcore.de"
+                }
+            ],
+            "description": "A helper package for working with the WordPress assets",
+            "support": {
+                "source": "https://github.com/Horttcore/wp-assets/tree/master"
+            },
+            "time": "2020-09-04T20:33:38+00:00"
         },
         {
             "name": "ralfhortt/wp-content-width",
-            "version": "1.4",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Horttcore/wp-content-width.git",
@@ -86,6 +95,7 @@
                 "reference": "d3b3f5a28935d04d8d66f020ccc1c52aa7e6cdbc",
                 "shasum": ""
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -103,22 +113,27 @@
                 }
             ],
             "description": "Setting the global WordPress variable `$content_width` in a single place for php and css",
+            "support": {
+                "issues": "https://github.com/Horttcore/wp-content-width/issues",
+                "source": "https://github.com/Horttcore/wp-content-width/tree/1.4"
+            },
             "time": "2020-01-16T13:36:22+00:00"
         },
         {
             "name": "ralfhortt/wp-image-sizes",
-            "version": "1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Horttcore/wp-image-sizes.git",
-                "reference": "05418c0477dec8ca41754999aa030517fb7e1ef5"
+                "reference": "930188ee748a43f6e2ee70fc9a45d2aba974e593"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Horttcore/wp-image-sizes/zipball/05418c0477dec8ca41754999aa030517fb7e1ef5",
-                "reference": "05418c0477dec8ca41754999aa030517fb7e1ef5",
+                "url": "https://api.github.com/repos/Horttcore/wp-image-sizes/zipball/930188ee748a43f6e2ee70fc9a45d2aba974e593",
+                "reference": "930188ee748a43f6e2ee70fc9a45d2aba974e593",
                 "shasum": ""
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -136,11 +151,15 @@
                 }
             ],
             "description": "A helper class to register image sizes",
-            "time": "2019-05-31T20:45:23+00:00"
+            "support": {
+                "issues": "https://github.com/Horttcore/wp-image-sizes/issues",
+                "source": "https://github.com/Horttcore/wp-image-sizes/tree/master"
+            },
+            "time": "2019-11-16T17:18:16+00:00"
         },
         {
             "name": "ralfhortt/wp-template-loader",
-            "version": "1.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Horttcore/wp-template-loader.git",
@@ -152,6 +171,7 @@
                 "reference": "e0a8c24b10eb0cb0eb64d2c17c49ba7618862db2",
                 "shasum": ""
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -169,15 +189,20 @@
                 }
             ],
             "description": "A helper class to load template files from another location",
+            "support": {
+                "issues": "https://github.com/Horttcore/wp-template-loader/issues",
+                "source": "https://github.com/Horttcore/wp-template-loader/tree/1.1.1"
+            },
             "time": "2019-06-04T20:00:05+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }

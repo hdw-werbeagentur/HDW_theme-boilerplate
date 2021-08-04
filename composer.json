@@ -24,7 +24,10 @@
       }
     ],
     "autoload": {
-        "files": []
+        "files": [
+          "functions.helpers.php",
+          "functions.custom.php"
+        ]
     },
     "require": {
         "horttcore/wp-customizer": "*",

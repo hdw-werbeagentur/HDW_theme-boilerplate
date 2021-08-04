@@ -57,7 +57,7 @@ add_action('after_setup_theme', function () {
      * @see https://codex.wordpress.org/Content_Width
      * ------------------------------------------------------------------------------
      */
-    (new ContentWidth(980))->register();
+    (new ContentWidth((get_field('hdw-theme-developer-setting__content-width', 'option') ? get_field('hdw-theme-developer-setting__content-width', 'option') : 980)))->register();
 
 
     /**
@@ -154,6 +154,16 @@ if (defined('ACF_PRO_KEY') && ACF_PRO_KEY != '') {
     // Activate ACF Pro
     include get_template_directory() . '/config/wordpress/acf-pro-activation.functions.php';
 }
+
+/**
+ * ------------------------------------------------------------------------------
+ * Register theme configuration files
+ * ------------------------------------------------------------------------------
+ */
+foreach (glob(get_template_directory() . '/config/theme/*.php') as $filename) {
+    include $filename;
+}
+
 /**
  * ------------------------------------------------------------------------------
  * Register custom post types
@@ -162,6 +172,7 @@ if (defined('ACF_PRO_KEY') && ACF_PRO_KEY != '') {
 foreach (glob(get_template_directory() . '/config/custom-post-types/*.php') as $filename) {
     include $filename;
 }
+
 /**
  * ------------------------------------------------------------------------------
  * Register modules
@@ -170,6 +181,29 @@ foreach (glob(get_template_directory() . '/config/custom-post-types/*.php') as $
 foreach (glob(get_template_directory() . '/resources/modules/**/*.config.php') as $filename) {
     include $filename;
 }
+
+/**
+ * ------------------------------------------------------------------------------
+ * Register and synchronize acf fields
+ * ------------------------------------------------------------------------------
+ */
+
+$register_acf_fields_source_directories = [
+    '/resources/modules/**/acf-json/',
+    '/config/theme/acf-json/',
+    '/config/custom-post-types/acf-json/'
+];
+
+foreach ($register_acf_fields_source_directories as $register_acf_fields_source_directory) {
+    foreach (glob(get_template_directory() . $register_acf_fields_source_directory . '*.json') as $filename) {
+        // Load - includes the /acf-json folder in this plugin to the places to look for ACF Local JSON files
+        add_filter('acf/settings/load_json', function($paths) use ( $filename ){
+            $paths[] = pathinfo($filename)['dirname'];
+            return $paths;
+        }, 20);
+    }
+}
+
 
 /**
  * ------------------------------------------------------------------------------

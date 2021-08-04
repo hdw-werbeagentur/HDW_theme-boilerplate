@@ -5,22 +5,24 @@
  * usage: `color: var(--color-primary);`
  */
 
-// SCSS variables
-$mq-mobile: 36em;
-$mq-tablet: 48em;
-$mq-desktop: 62em;
-$mq-wide: 75em;
-$global-container-padding: 1.25em;
+ @import "../../scss/0-settings/_variables.scss";
 
 :root {
 	// Global paddings
 	--container-padding: #{$global-container-padding};
+
+    // Grid settings
+    --grid__columns: 4;
+    --grid__gap: #{$global-grid-gap};
+    --grid__overlay--color: #3e0077;
+
     // Font stacks
     --font__copy: sans-serif;
 	--font__copy--weight: 300;
 	--font__copy--size: 1em;
 	--font__copy--line-height: 1.5;
     --font__heading: sans-serif;
+
     // Color by name
     --color__black: #000;
     --color__white: #fff;
@@ -33,6 +35,7 @@ $global-container-padding: 1.25em;
     --color__green--light: #d4edda;
     --color__blue: #004085;
     --color__blue--light: #cce5ff;
+
     // Color by usage
     --color__primary: var(--color__black);
     --color__secondary: var(--color__grey);
@@ -47,15 +50,48 @@ $global-container-padding: 1.25em;
     --color__success--light: var(--color__green--light);
     --color__notice: var(--color__blue);
     --color__notice--light: var(--color__blue--light);
+
     // Media Queries
     --mq__mobile: #{$mq-mobile};
     --mq__tablet: #{$mq-tablet};
     --mq__desktop: #{$mq-desktop};
     --mq__wide: #{$mq-wide};
+
     // Animation
     --animation__duration: 400ms;
     --animation__timing-function: ease-in-out;
+
     // Misc
     --adminbar__height--narrow: 32px;
-    --adminbar__height: 46px; 
+    --adminbar__height: 46px;
+
+    @media (--tablet) {
+        // Global paddings
+        --container-padding: calc(#{$global-container-padding} * 1.5);
+
+        // Grid settings
+        --grid__columns: 6;
+        --grid__gap: calc(#{$global-grid-gap} * 1.5);
+        --grid__overlay--color: #005994;
+    }
+
+    @media (--desktop) {
+        // Global paddings
+        --container-padding: calc(#{$global-container-padding} * 2);
+
+        // Grid settings
+        --grid__columns: 8;
+        --grid__gap: calc(#{$global-grid-gap} * 1.75);
+        --grid__overlay--color: #8a0000;
+    }
+
+    @media (--wide) {
+        // Global paddings
+        --container-padding: calc(#{$global-container-padding} * 3);
+
+        // Grid settings
+        --grid__columns: 12;
+        --grid__gap: calc(#{$global-grid-gap} * 2);
+        --grid__overlay--color: #009e55;
+    }
 }

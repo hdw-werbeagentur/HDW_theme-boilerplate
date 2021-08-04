@@ -4,11 +4,11 @@
  * Defining custom media queries
  * usage: `@media (--mobile);`
  */
-@custom-media --mobile (min-width: #{$mq-mobile}); 
+@custom-media --mobile (min-width: #{$mq-mobile});
 @custom-media --mobile-max (max-width: calc( #{$mq-mobile} - 0.00125em ));
 @custom-media --tablet (min-width: #{$mq-tablet});
 @custom-media --tablet-max (max-width: calc( #{$mq-tablet} - 0.00125em ));
 @custom-media --desktop (min-width: #{$mq-desktop});
-@custom-media --desktop-max (max-width: calc( #{$mq-desktop} - 0.00125em )); 
+@custom-media --desktop-max (max-width: calc( #{$mq-desktop} - 0.00125em ));
 @custom-media --wide (min-width: #{$mq-wide});
 @custom-media --wide-max (max-width: calc( #{$mq-wide} - 0.00125em ));

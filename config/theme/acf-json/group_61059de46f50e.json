@@ -1,0 +1,120 @@
+{
+    "key": "group_61059de46f50e",
+    "title": "Theme Developer Settings",
+    "fields": [
+        {
+            "key": "field_6105a8f5da906",
+            "label": "Global Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6105a90fda907",
+            "label": "Content width",
+            "name": "hdw-theme-developer-setting__content-width",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1440,
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_61059dee1e1ed",
+            "label": "Grid Overlay",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_610a540689e75",
+            "label": "Use the url parameter",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "message": "You could enable or disable the grid-overlay with an url parameter aswell, just add to the url: ?grid-overlay=true",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_61059f041e1f3",
+            "label": "Enable Grid Overlay",
+            "name": "hdw-theme-developer-setting__grid-overlay",
+            "type": "select",
+            "instructions": "Should the Grid Overlay be visible?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "true": "Enabled",
+                "false": "Disbaled",
+                "dev": "On local development"
+            },
+            "default_value": "false",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-development"
+            }
+        ]
+    ],
+    "menu_order": 10000,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "[OPTIONS] Theme configuration related to the development processes",
+    "modified": 1628067155
+}
