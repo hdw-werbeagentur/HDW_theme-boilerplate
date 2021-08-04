@@ -38,10 +38,10 @@
     },
     "scripts": {
         "post-create-project-cmd": "composer run replace-textdomain && composer run-script copy-env",
-        "replace-textdomain": "if [ $(grep '^NAME' /etc/os-release) = 'NAME=\"Ubuntu\"' ]; then composer run-script initial-replace-textdomain-linux; else composer run-script initial-replace-textdomain-mac; fi",
+        "replace-textdomain": "if [ $(grep '^NAME' /etc/os-release) = 'NAME=\"Ubuntu\"' ]; then echo 'Linux System detected' && composer run-script initial-replace-textdomain-linux; else echo 'Mac System detected' && composer run-script initial-replace-textdomain-mac; fi",
         "replace-textdomain-mac": "DIR=$(basename $PWD); LC_ALL=C find ./ -not \\( -path \".//vendor/*\" -o -path \".//node_modules/*\" -o -path \".//.git/*\" \\) -type f \\( -iname '*.js' -o -iname '*.php' -o -iname '*.css' \\) -exec sed -i '' -e \"s/TEXTDOMAIN/${DIR}/g\" {} \\;",
         "replace-textdomain-linux": "DIR=$(basename $PWD); LC_ALL=C find ./ -not \\( -path \".//vendor/*\" -o -path \".//node_modules/*\" -o -path \".//.git/*\" \\) -type f \\( -iname '*.js' -o -iname '*.php' -o -iname '*.css' \\) -exec sed -i -e \"s/TEXTDOMAIN/${DIR}/g\" {} \\;",
-        "initial-replace-textdomain": "if [ $(grep '^NAME' /etc/os-release) = 'NAME=\"Ubuntu\"' ]; then composer run-script initial-replace-textdomain-linux; else composer run-script initial-replace-textdomain-mac; fi",
+        "initial-replace-textdomain": "if [ $(grep '^NAME' /etc/os-release) = 'NAME=\"Ubuntu\"' ]; then echo 'Linux System detected' && composer run-script initial-replace-textdomain-linux; else echo 'Mac System detected' && composer run-script initial-replace-textdomain-mac; fi",
         "initial-replace-textdomain-mac": "DIR=$(cat .project-name); LC_ALL=C find ./ -not \\( -path \".//vendor/*\" -o -path \".//node_modules/*\" -o -path \".//.git/*\" \\) -type f \\( -iname '*.js' -o -iname '*.php' -o -iname '*.css' \\) -exec sed -i '' -e \"s/TEXTDOMAIN/${DIR}/g\" {} \\;",
         "initial-replace-textdomain-linux": "DIR=$(cat .project-name); LC_ALL=C find ./ -not \\( -path \".//vendor/*\" -o -path \".//node_modules/*\" -o -path \".//.git/*\" \\) -type f \\( -iname '*.js' -o -iname '*.php' -o -iname '*.css' \\) -exec sed -i -e \"s/TEXTDOMAIN/${DIR}/g\" {} \\;",
         "copy-env": "cp .env.example .env",
