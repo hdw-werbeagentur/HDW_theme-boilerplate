@@ -184,29 +184,6 @@ foreach (glob(get_template_directory() . '/resources/modules/**/*.config.php') a
 
 /**
  * ------------------------------------------------------------------------------
- * Register and synchronize acf fields
- * ------------------------------------------------------------------------------
- */
-
-$register_acf_fields_source_directories = [
-    '/resources/modules/**/acf-json/',
-    '/config/theme/acf-json/',
-    '/config/custom-post-types/acf-json/'
-];
-
-foreach ($register_acf_fields_source_directories as $register_acf_fields_source_directory) {
-    foreach (glob(get_template_directory() . $register_acf_fields_source_directory . '*.json') as $filename) {
-        // Load - includes the /acf-json folder in this plugin to the places to look for ACF Local JSON files
-        add_filter('acf/settings/load_json', function($paths) use ( $filename ){
-            $paths[] = pathinfo($filename)['dirname'];
-            return $paths;
-        }, 20);
-    }
-}
-
-
-/**
- * ------------------------------------------------------------------------------
  * Put project specific code in functions.custom.php
  * ------------------------------------------------------------------------------
  */
