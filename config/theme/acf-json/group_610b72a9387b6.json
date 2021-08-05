@@ -1,0 +1,436 @@
+{
+    "key": "group_610b72a9387b6",
+    "title": "Theme Settings",
+    "fields": [
+        {
+            "key": "field_610b7363545fc",
+            "label": "Color Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_610b75ff3be84",
+            "label": "Main theme colors",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "message": "These colors are related to the project corporate design. Mostly are the colors from the brand logo used. Only overwrite them if you know what you're doing!",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_610b73853eadb",
+            "label": "Primary Color",
+            "name": "hdw-theme-setting__color-primary",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__primary);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b75889f8b5",
+            "label": "Secondary Color",
+            "name": "hdw-theme-setting__color-secondary",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__secondary);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b759e3b040",
+            "label": "Tertiary Color",
+            "name": "hdw-theme-setting__color-tertiary",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__tertiary);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b75d8a0e9f",
+            "label": "Accent Color",
+            "name": "hdw-theme-setting__color-accent",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__accent);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b76313be85",
+            "label": "Formatting Colors",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "message": "All these colors are used to format elements on the website (e.g.: links)",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_610b8163a4b70",
+            "label": "Site Background Color",
+            "name": "hdw-theme-setting__color-site-background",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__site-background);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b7e1791b56",
+            "label": "Link Color",
+            "name": "hdw-theme-setting__color-links",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__links);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b7e3591b57",
+            "label": "Links Color (hover)",
+            "name": "hdw-theme-setting__color-links--hover",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__links--hover);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b7dea70212",
+            "label": "Validation Colors",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "message": "All these colors would be used in form validation message and input field validations",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_610b763d3be86",
+            "label": "Error Color",
+            "name": "hdw-theme-setting__color-error",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__error);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b768f76a81",
+            "label": "Error Color (light)",
+            "name": "hdw-theme-setting__color-error--light",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__error--light);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b77f42764f",
+            "label": "Error Color (dark)",
+            "name": "hdw-theme-setting__color-error--dark",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__error--dark);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b7a84dbb2b",
+            "label": "Error Color (accent)",
+            "name": "hdw-theme-setting__color-error--accent",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__error--accent);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b792aa4279",
+            "label": "Warning Color",
+            "name": "hdw-theme-setting__color-warning",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__warning);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b7944a427a",
+            "label": "Warning Color (light)",
+            "name": "hdw-theme-setting__color-warning--light",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__warning--light);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b794aa427b",
+            "label": "Warning Color (dark)",
+            "name": "hdw-theme-setting__color-warning--dark",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__warning--dark);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b7a92dbb2c",
+            "label": "Warning Color (accent)",
+            "name": "hdw-theme-setting__color-warning--accent",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__warning--accent);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b7b7cf33dc",
+            "label": "Success Color",
+            "name": "hdw-theme-setting__color-success",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__success);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b7b80f33dd",
+            "label": "Success Color (light)",
+            "name": "hdw-theme-setting__color-success--light",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__success--light);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b7ba5f33de",
+            "label": "Success Color (dark)",
+            "name": "hdw-theme-setting__color-success--dark",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__success--dark);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b7ba6f33df",
+            "label": "Success Color (accent)",
+            "name": "hdw-theme-setting__color-success--accent",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__success--accent);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b7bd397f36",
+            "label": "Notice Color",
+            "name": "hdw-theme-setting__color-notice",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__notice);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b7bd897f37",
+            "label": "Notice Color (light)",
+            "name": "hdw-theme-setting__color-notice--light",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__notice--light);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b7c0097f38",
+            "label": "Notice Color (dark)",
+            "name": "hdw-theme-setting__color-notice--dark",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__notice--dark);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_610b7c0197f39",
+            "label": "Notice Color (accent)",
+            "name": "hdw-theme-setting__color-notice--accent",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__notice--accent);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "hdw-theme-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "[OPTIONS] General theme configuration",
+    "modified": 1628144472
+}

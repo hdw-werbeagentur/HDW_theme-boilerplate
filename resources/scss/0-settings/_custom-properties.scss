@@ -37,19 +37,34 @@
     --color__blue--light: #cce5ff;
 
     // Color by usage
-    --color__primary: var(--color__black);
-    --color__secondary: var(--color__grey);
-    --color__tertiary: var(--color__white);
-    --color__accent:  var(--color__yellow);
-    --color__links: var(--color__black);
+    // -> Brand colors
+    --color__primary: #384853;
+    --color__secondary: #606c74;
+    --color__tertiary: #7091a5;
+    --color__accent:  #4285f4;
+
+    // -> Fromatting colors
+    --color__site-background: var(--color__white);
+    --color__links: var(--color__accent);
+    --color__links--hover: var(--color__primary);
+
+    // -> Validation colors
     --color__error: var(--color__red);
     --color__error--light: var(--color__red--light);
+    --color__error--dark: var(--color__red);
+    --color__error--accent: var(--color__red);
     --color__warning: var(--color__yellow);
     --color__warning--light: var(--color__yellow--light);
+    --color__warning--dark: var(--color__yellow);
+    --color__warning--accent: var(--color__yellow);
     --color__success: var(--color__green);
     --color__success--light: var(--color__green--light);
+    --color__success--dark: var(--color__green);
+    --color__success--accent: var(--color__green);
     --color__notice: var(--color__blue);
     --color__notice--light: var(--color__blue--light);
+    --color__notice--dark: var(--color__blue);
+    --color__notice--accent: var(--color__blue);
 
     // Media Queries
     --mq__mobile: #{$mq-mobile};

@@ -5,6 +5,14 @@ a {
     transition: all var(--animation__duration)  var(--animation__timing-function) 0s;
     color: var(--color__links);
 
+
+
+    @media (hover: hover) {
+        &:hover{
+            color: var(--color__links--hover);
+        }
+    }
+
     &:not([class]) {
         text-decoration: underline;
 

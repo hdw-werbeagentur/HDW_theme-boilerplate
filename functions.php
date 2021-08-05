@@ -15,6 +15,8 @@
  */
 use \RalfHortt\Assets\Script;
 use \RalfHortt\Assets\Style;
+use \RalfHortt\Assets\AdminStyle;
+use \RalfHortt\Assets\AdminScript;
 use \RalfHortt\ContentWidth\ContentWidth;
 use \RalfHortt\TemplateLoader\TemplateLocator;
 
@@ -71,7 +73,9 @@ add_action('after_setup_theme', function () {
     (new Style('sanitize-css', get_template_directory_uri() . '/dist/vendor/sanitize-css/sanitize.css'))->register();
     (new Style('theme', get_template_directory_uri() . '/dist/css/app.min.css', ['sanitize-css']))->register();
 
-    add_editor_style('dist/css/editor-styles.css');
+    //  add_editor_style('dist/css/editor-styles.css');
+
+    (new AdminStyle('editor-styles-admin', get_template_directory_uri() . '/dist/css/editor-styles.min.css', ['sanitize-css'], false, true))->register();
 
 
     /**

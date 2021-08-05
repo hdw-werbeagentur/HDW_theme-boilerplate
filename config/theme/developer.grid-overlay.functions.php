@@ -62,6 +62,6 @@ if($setGridOverlay){
     }
 
     add_filter( 'body_class','enable_grid_overlay_body_class' );
-    add_action( 'wp_head', 'grid_overlay_css', 100 );
+    add_action( 'wp_footer', 'grid_overlay_css', 100 );
 }
 

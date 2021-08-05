@@ -38,7 +38,7 @@
     },
     "scripts": {
         "post-create-project-cmd": "npm i && composer run-script copy-env && composer run replace-textdomain",
-        "replace-textdomain": "DIR=$(basename $PWD); npm run process-replace \"TEXTDOMAIN\" \"${DIR}\" \"{config,resources}/**/*.{php,js,scss}\" && npm run process-replace \"TEXTDOMAIN\" \"${DIR}\" *.{php,js,scss,env} && npm run process-replace \"TEXTDOMAIN\" \"${DIR}\" \".env\";",
+        "replace-textdomain": "DIR=$(basename $PWD); npm run process-replace \"TEXTDOMAIN\" \"${DIR}\" \"{config,resources}/**/*.{php,js,scss}\" && npm run process-replace \"TEXTDOMAIN\" \"${DIR}\" *.{php,js,scss,css} && npm run process-replace \"TEXTDOMAIN\" \"${DIR}\" \".env\";",
         "copy-env": "cp .env.example .env",
         "add-acf-module": [
           "MODULE=$(read -p 'How should be the module named?: ' MODULENAME && echo $MODULENAME); (cd resources/modules/ && composer create-project --stability=DEV --remove-vcs hdw-werbeagentur/hdw-acf-module-boilerplate ${MODULE});"
