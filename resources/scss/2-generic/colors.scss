@@ -1,0 +1,63 @@
+/*
+**  Colors
+**  ------------------
+**  Will be used from gutenberg color definitions
+**  Copy the used ones into the $fontWeights variable
+**  ------------------
+**  Add more colors:
+**  If you want to add or adapt the colors
+**  Please change the following file:
+**  /config/wordpress/theme-support.functions.php
+*/
+
+.has-background{
+    &.has-primary-background-color{
+        background: var(--color__primary);
+    }
+
+    &.has-secondary-background-color{
+        background: var(--color__secondary);
+    }
+
+    &.has-tertiary-background-color{
+        background: var(--color__tertiary);
+    }
+
+    &.has-accent-background-color{
+        background: var(--color__accent);
+    }
+
+    &.has-white-background-color{
+        background: var(--color__white);
+    }
+
+    &.has-black-background-color{
+        background: var(--color__black);
+    }
+}
+
+.has-text-color{
+    &.has-primary-color{
+        color: var(--color__primary);
+    }
+
+    &.has-secondary-color{
+        color: var(--color__secondary);
+    }
+
+    &.has-tertiary-color{
+        color: var(--color__tertiary);
+    }
+
+    &.has-accent-color{
+        color: var(--color__accent);
+    }
+
+    &.has-white-color{
+        color: var(--color__white);
+    }
+
+    &.has-black-color{
+        color: var(--color__black);
+    }
+}

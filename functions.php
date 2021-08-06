@@ -75,7 +75,7 @@ add_action('after_setup_theme', function () {
 
     //  add_editor_style('dist/css/editor-styles.css');
 
-    (new AdminStyle('editor-styles-admin', get_template_directory_uri() . '/dist/css/editor-styles.min.css', ['sanitize-css'], false, true))->register();
+    (new AdminStyle('editor-styles-admin', get_template_directory_uri() . '/dist/css/editor-styles.min.css', [], false, true))->register();
 
 
     /**

@@ -20,9 +20,34 @@
         'editor-color-palette',
         [
             [
-                'name' => __('Schwarz', 'TEXTDOMAIN'),
+                'name' => __('Primary', 'saar-technology'),
+                'slug' => 'primary',
+                'color' => getCssCustomProp('color__primary'),
+            ],
+            [
+                'name' => __('Scondary', 'saar-technology'),
+                'slug' => 'secondary',
+                'color' => getCssCustomProp('color__secondary'),
+            ],
+            [
+                'name' => __('Tertiary', 'saar-technology'),
+                'slug' => 'tertiary',
+                'color' => getCssCustomProp('color__tertiary'),
+            ],
+            [
+                'name' => __('Accent', 'saar-technology'),
+                'slug' => 'accent',
+                'color' => getCssCustomProp('color__accent'),
+            ],
+            [
+                'name' => __('White', 'saar-technology'),
+                'slug' => 'white',
+                'color' => getCssCustomProp('color__white'),
+            ],
+            [
+                'name' => __('Black', 'saar-technology'),
                 'slug' => 'black',
-                'color' => '#000',
+                'color' => getCssCustomProp('color__black'),
             ],
         ]
     );
