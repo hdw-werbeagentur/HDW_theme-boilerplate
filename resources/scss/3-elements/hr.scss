@@ -1,0 +1,23 @@
+hr.wp-block-separator{
+    --separator__size--height: 0.125rem;
+    --separator__size--width: 5rem;
+    --separator__size--margin: 1.25rem;
+    --separator__color--background: var(--color__secondary);
+
+    height: var(--separator__size--height);
+    width: var(--separator__size--width);
+    background: var(--separator__color--background);
+    margin: var(--separator__size--margin) auto var(--separator__size--margin) 0;
+    border: 0;
+
+    &.is-style-wide{
+        --separator__size--width: 100%;
+    }
+
+    &.is-style-dots{
+        --separator__size--width: 100%;
+        &::before {
+            color: var(--separator__color--background);
+        }
+    }
+}
