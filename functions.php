@@ -179,6 +179,15 @@ foreach (glob(get_template_directory() . '/config/custom-post-types/*.php') as $
 
 /**
  * ------------------------------------------------------------------------------
+ * Register gutenberg configurations files
+ * ------------------------------------------------------------------------------
+ */
+foreach (glob(get_template_directory() . '/config/gutenberg/*.php') as $filename) {
+    include $filename;
+}
+
+/**
+ * ------------------------------------------------------------------------------
  * Register modules
  * ------------------------------------------------------------------------------
  */

@@ -19,9 +19,19 @@
     // Font stacks
     --font__copy: sans-serif;
 	--font__copy--weight: 300;
-	--font__copy--size: 1em;
-	--font__copy--line-height: 1.5;
+	--font__copy--size: 1.125rem;
+	--font__copy--line-height: 1.3;
     --font__heading: sans-serif;
+    --font__heading--weight: 400;
+    --font__heading--line-height: 1.3;
+    --font__heading-size--primary: 2.5rem;
+    --font__heading-line-height--primary: var(--font__heading--line-height);
+    --font__heading-size--secondary: 2.125rem;
+    --font__heading-line-height--secondary: var(--font__heading--line-height);
+    --font__heading-size--tertiary: 1.75rem;
+    --font__heading-line-height--tertiary: var(--font__heading--line-height);
+    --font__heading-size--quaternary: 1.5rem;
+    --font__heading-line-height--quaternary: var(--font__heading--line-height);
 
     // Color by name
     --color__black: #000;
@@ -80,7 +90,17 @@
     --adminbar__height--narrow: 32px;
     --adminbar__height: 46px;
 
+    @media (--mobile) {
+    }
+
     @media (--tablet) {
+        // Font stacks
+        --font__copy--size: 1.375rem;
+        --font__heading-size--primary: 3.125rem;
+        --font__heading-size--secondary: 2.625rem;
+        --font__heading-size--tertiary: 2.25rem;
+        --font__heading-size--quaternary: 1.5rem;
+
         // Global paddings
         --container-padding: calc(#{$global-container-padding} * 1.5);
 

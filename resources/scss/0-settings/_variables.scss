@@ -9,3 +9,35 @@ $global-grid-gap: 0.625rem;
 $fontWeightLight: 300;
 $fontWeightRegular: 400;
 $fontWeightBold: 700;
+
+/*
+**  Font weights
+**  ------------------
+**  Will be used
+**  Copy the used ones into the $fontWeights variable
+**  ------------------
+**  Options:
+
+    thin: 100,
+    extra-light: 200,
+    ultra-light: 200,
+    light: 300,
+    normal: 400,
+    book: 400,
+    regular: 400,
+    medium: 500,
+    semi-bold: 600,
+    demi-bold: 600,
+    bold: 700,
+    extra-bold: 800,
+    heavy: 800,
+    ultra-bold: 900
+
+**
+*/
+
+$fontWeights: (
+    light: 300,
+    regular: 400,
+    bold: 700,
+);

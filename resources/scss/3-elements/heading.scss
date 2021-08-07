@@ -1,23 +1,43 @@
-/**
- * <h>
- */
+/*
+** <h>
+**/
+
 h1,
+.is-style-h1,
 h2,
+.is-style-h2,
 h3,
+.is-style-h3,
 h4,
+.is-style-h4,
 h5,
-h6 {
-    font-family: var(--font__heading);
+.is-style-h5,
+h6,
+.is-style-h6 {
+  font-family: var(--font__heading);
+  font-weight: var(--font__heading--weight);
 }
 
-h1 {
-    @extend %heading--primary !optional;
+h1,
+.is-style-h1 {
+  @extend %heading--primary !optional;
 }
 
-h2 {
-    @extend %heading--secondary !optional;
+h2,
+.is-style-h2 {
+  @extend %heading--secondary !optional;
 }
 
-h3 {
-    @extend %heading--teritary !optional;
+h3,
+.is-style-h3 {
+  @extend %heading--tertiary !optional;
+}
+
+h4,
+.is-style-h4,
+h5,
+.is-style-h5,
+h6,
+.is-style-h6 {
+  @extend %heading--quaternary !optional;
 }

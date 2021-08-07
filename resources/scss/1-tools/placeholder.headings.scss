@@ -5,10 +5,21 @@
  */
 
 %heading--primary {
+    font-size: var(--font__heading-size--primary);
+    line-height: var(--font__heading-line-height--primary);
 }
 
 %heading--secondary {
+    font-size: var(--font__heading-size--secondary);
+    line-height: var(--font__heading-line-height--secondary);
 }
 
 %heading--tertiary {
+    font-size: var(--font__heading-size--tertiary);
+    line-height: var(--font__heading-line-height--tertiary);
+}
+
+%heading--quaternary {
+    font-size: var(--font__heading-size--quaternary);
+    line-height: var(--font__heading-line-height--quaternary);
 }

@@ -52,20 +52,10 @@
         ]
     );
     add_theme_support('editor-font-sizes', [
-        [
-            'name' => __('Klein', 'TEXTDOMAIN'),
-            'size' => 12,
-            'slug' => 'small'
-        ],
-        [
-            'name' => __('Normal', 'TEXTDOMAIN'),
-            'size' => 16,
-            'slug' => 'normal'
-        ],
-        [
-            'name' => __('Groß', 'TEXTDOMAIN'),
-            'size' => 32,
-            'slug' => 'large'
-        ],
+        // [
+        //     'name' => __('Klein', 'TEXTDOMAIN'),
+        //     'size' => 12,
+        //     'slug' => 'small'
+        // ],
     ]);
     add_theme_support('editor-styles');

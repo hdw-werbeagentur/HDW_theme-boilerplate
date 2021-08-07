@@ -1,0 +1,32 @@
+@import "../1-tools/mixin.font-face.scss";
+
+/*
+**  Webfont font faces
+**  ------------------
+**  Config:
+++  Add entries to the $fontWeights map in:
+**  /resources/scss/0-settings/_variables.scss
+**  ------------------
+**  Copy the used ones into the $fontWeights variable
+**  ------------------
+**  You could use the font-face mixin.
+**  Please follow these instructions
+**  font-face(<name>, <path-to-file><filename-withouth-weight-name>, <weight-value>, <style>, <filetypes-space-seperated>
+**  ------------------
+**  Performance optimization:
+**  Please add a preload script for each font to the head.php in
+**  /resources/views/template-parts/head.php
+**  <link rel="preload" href="<?= get_template_directory_uri() . '/dist/fonts/example-regular.woff2' ?>" as="font" type="font/woff2" crossorigin>
+*/
+
+// Example Font with one weight
+// -> regular: 400
+@include font-face("Example Variant", "../fonts/example-variant-#{"regular"}", #{map-get($fontWeights, "regular")}, normal, woff2 woff);
+
+// Example Font with multiple weights
+// -> light: 300
+// -> regular: 400
+// -> bold: 700
+@each $fontWeight, $fontValue in $fontWeights {
+  @include font-face("Example", "../fonts/example-#{$fontWeight}", #{$fontValue}, normal, woff2 woff);
+}
