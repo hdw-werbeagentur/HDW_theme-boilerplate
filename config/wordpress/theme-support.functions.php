@@ -20,34 +20,79 @@
         'editor-color-palette',
         [
             [
-                'name' => __('Primary', 'saar-technology'),
+                'name' => __('Primary', 'TEXTDOMAIN'),
                 'slug' => 'primary',
                 'color' => getCssCustomProp('color__primary'),
             ],
             [
-                'name' => __('Scondary', 'saar-technology'),
+                'name' => __('Scondary', 'TEXTDOMAIN'),
                 'slug' => 'secondary',
                 'color' => getCssCustomProp('color__secondary'),
             ],
             [
-                'name' => __('Tertiary', 'saar-technology'),
+                'name' => __('Tertiary', 'TEXTDOMAIN'),
                 'slug' => 'tertiary',
                 'color' => getCssCustomProp('color__tertiary'),
             ],
             [
-                'name' => __('Accent', 'saar-technology'),
+                'name' => __('Accent', 'TEXTDOMAIN'),
                 'slug' => 'accent',
                 'color' => getCssCustomProp('color__accent'),
             ],
             [
-                'name' => __('White', 'saar-technology'),
+                'name' => __('White', 'TEXTDOMAIN'),
                 'slug' => 'white',
                 'color' => getCssCustomProp('color__white'),
             ],
             [
-                'name' => __('Black', 'saar-technology'),
+                'name' => __('Black', 'TEXTDOMAIN'),
                 'slug' => 'black',
                 'color' => getCssCustomProp('color__black'),
+            ],
+            [
+                'name' => __('Grey', 'TEXTDOMAIN'),
+                'slug' => 'grey',
+                'color' => getCssCustomProp('color__grey'),
+            ],
+            [
+                'name' => __('Red', 'TEXTDOMAIN'),
+                'slug' => 'red',
+                'color' => getCssCustomProp('color__red'),
+            ],
+            [
+                'name' => __('Light red', 'TEXTDOMAIN'),
+                'slug' => 'light-red',
+                'color' => getCssCustomProp('color__red--light'),
+            ],
+            [
+                'name' => __('Yellow', 'TEXTDOMAIN'),
+                'slug' => 'yellow',
+                'color' => getCssCustomProp('color__yellow'),
+            ],
+            [
+                'name' => __('Light yellow', 'TEXTDOMAIN'),
+                'slug' => 'light-yellow',
+                'color' => getCssCustomProp('color__yellow--light'),
+            ],
+            [
+                'name' => __('Blue', 'TEXTDOMAIN'),
+                'slug' => 'blue',
+                'color' => getCssCustomProp('color__blue'),
+            ],
+            [
+                'name' => __('Light blue', 'TEXTDOMAIN'),
+                'slug' => 'light-blue',
+                'color' => getCssCustomProp('color__blue--light'),
+            ],
+            [
+                'name' => __('Green', 'TEXTDOMAIN'),
+                'slug' => 'green',
+                'color' => getCssCustomProp('color__green'),
+            ],
+            [
+                'name' => __('Light green', 'TEXTDOMAIN'),
+                'slug' => 'light-green',
+                'color' => getCssCustomProp('color__green--light'),
             ],
         ]
     );

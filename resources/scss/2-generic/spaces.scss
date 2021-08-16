@@ -1,0 +1,87 @@
+$boxSpaces: margin, padding;
+$positions: top, right, bottom, left, horizontal, vertical;
+
+:root{
+    --responsive-spaces-fix: .6;
+
+    @media (--mobile){
+        --responsive-spaces-fix: .75;
+    }
+
+    @media (--tablet){
+        --responsive-spaces-fix: .8;
+    }
+
+    @media (--desktop){
+        --responsive-spaces-fix: .9;
+    }
+
+    @media (--wide){
+        --responsive-spaces-fix: 1;
+    }
+}
+
+@each $boxSpace in $boxSpaces {
+    .#{$boxSpace}{
+        @each $spaceName, $spaceValue in $spaces {
+            &--#{$spaceName}{
+                #{$boxSpace}: calc( #{$spaceValue} * var(--responsive-spaces-fix) );
+
+                @if $allow-important {
+                    &\!important{
+                        #{$boxSpace}: calc( #{$spaceValue} * var(--responsive-spaces-fix) ) !important;
+                    }
+                }
+            }
+        }
+
+        @each $position in $positions {
+            &__#{$position}{
+                @if $position == horizontal {
+                    @each $spaceName, $spaceValue in $spaces {
+                        &--#{$spaceName}{
+                            #{$boxSpace}-top: calc( #{$spaceValue} * var(--responsive-spaces-fix) );
+                            #{$boxSpace}-bottom: calc( #{$spaceValue} * var(--responsive-spaces-fix) );
+
+                            @if $allow-important {
+                                &\!important{
+                                    #{$boxSpace}-top: calc( #{$spaceValue} * var(--responsive-spaces-fix) ) !important;
+                                    #{$boxSpace}-bottom: calc( #{$spaceValue} * var(--responsive-spaces-fix) ) !important;
+                                }
+                            }
+                        }
+                    }
+                }
+                @else if $position == vertical {
+                    @each $spaceName, $spaceValue in $spaces {
+                        &--#{$spaceName}{
+                            #{$boxSpace}-left: calc( #{$spaceValue} * var(--responsive-spaces-fix) );
+                            #{$boxSpace}-right: calc( #{$spaceValue} * var(--responsive-spaces-fix) );
+
+
+                            @if $allow-important {
+                                &\!important{
+                                    #{$boxSpace}-left: calc( #{$spaceValue} * var(--responsive-spaces-fix) ) !important;
+                                    #{$boxSpace}-right: calc( #{$spaceValue} * var(--responsive-spaces-fix) ) !important;
+                                }
+                            }
+                        }
+                    }
+                }
+                @else {
+                    @each $spaceName, $spaceValue in $spaces {
+                        &--#{$spaceName}{
+                            #{$boxSpace}-#{$position}: calc( #{$spaceValue} * var(--responsive-spaces-fix) );
+
+                            @if $allow-important {
+                                &\!important{
+                                    #{$boxSpace}-#{$position}: calc( #{$spaceValue} * var(--responsive-spaces-fix) ) !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

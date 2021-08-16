@@ -43,6 +43,7 @@ function getBoolFromString($test_var){
     return (boolean) $test_var;
 }
 
+
 /**
 ** ------------------------------------------------------------------------------
 ** Get value from css custom properties
@@ -51,7 +52,7 @@ function getBoolFromString($test_var){
 function getCssCustomProp($prop){
     $lines_array = file(get_template_directory() . "/resources/scss/0-settings/_custom-properties.scss");
     foreach($lines_array as $line) {
-        if(strpos($line, '--'.$prop) !== false) {
+        if(strpos($line, '--'.$prop.': #') !== false) {
             list(, $new_str) = explode(":", $line);
             // If you don't want the space before the word bong, uncomment the following line.
             //$new_str = trim($new_str);

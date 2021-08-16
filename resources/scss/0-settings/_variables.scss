@@ -10,6 +10,9 @@ $fontWeightLight: 300;
 $fontWeightRegular: 400;
 $fontWeightBold: 700;
 
+// Configuration
+$allow-important: false;
+
 /*
 **  Font weights
 **  ------------------
@@ -40,4 +43,23 @@ $fontWeights: (
     light: 300,
     regular: 400,
     bold: 700,
+);
+
+
+/*
+**  Spaces
+**  ------------------
+**  Will be used for paddings and margins
+**  Just add, adapt or remove entries in the scss map
+**  the scss will do the rest
+**  ------------------
+**  Usage:
+**  - HTML: class="margin__bottom--large"
+**  - SCSS: @extend %margin__bottom--large;
+*/
+
+$spaces: (
+    small: 1.25rem,
+    medium: 1.875rem,
+    large: 3.125rem
 );

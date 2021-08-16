@@ -1,0 +1,11 @@
+.validation-message{
+    border-radius: var(--global__radius);
+
+    &__icon{
+        position: relative;
+        border-radius: var(--global__radius);
+        height: 3.25rem;
+        font-size: 2.5rem;
+        line-height: 3.25rem;
+    }
+}

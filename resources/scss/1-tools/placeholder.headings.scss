@@ -4,22 +4,26 @@
  * Define global heading styles for reusage in components
  */
 
-%heading--primary {
+ %heading--primary {
     font-size: var(--font__heading-size--primary);
     line-height: var(--font__heading-line-height--primary);
+    @extend %margin__bottom--large !optional;
 }
 
 %heading--secondary {
     font-size: var(--font__heading-size--secondary);
     line-height: var(--font__heading-line-height--secondary);
+    @extend %margin__bottom--medium !optional;
 }
 
 %heading--tertiary {
     font-size: var(--font__heading-size--tertiary);
     line-height: var(--font__heading-line-height--tertiary);
+    @extend %margin__bottom--medium !optional;
 }
 
 %heading--quaternary {
     font-size: var(--font__heading-size--quaternary);
     line-height: var(--font__heading-line-height--quaternary);
+    @extend %margin__bottom--small !optional;
 }

@@ -34,6 +34,42 @@
     &.has-black-background-color{
         background: var(--color__black);
     }
+
+    &.has-grey-background-color{
+        background: var(--color__grey);
+    }
+
+    &.has-red-background-color{
+        background: var(--color__red);
+    }
+
+    &.has-light-red-background-color{
+        background: var(--color__red--light);
+    }
+
+    &.has-green-background-color{
+        background: var(--color__green);
+    }
+
+    &.has-light-green-background-color{
+        background: var(--color__green--light);
+    }
+
+    &.has-blue-background-color{
+        background: var(--color__blue);
+    }
+
+    &.has-light-blue-background-color{
+        background: var(--color__blue--light);
+    }
+
+    &.has-yellow-background-color{
+        background: var(--color__yellow);
+    }
+
+    &.has-light-yellow-background-color{
+        background: var(--color__yellow--light);
+    }
 }
 
 .has-text-color{
@@ -59,5 +95,41 @@
 
     &.has-black-color{
         color: var(--color__black);
+    }
+
+    &.has-grey-color{
+        color: var(--color__grey);
+    }
+
+    &.has-red-color{
+        color: var(--color__red);
+    }
+
+    &.has-light-red-color{
+        color: var(--color__red--light);
+    }
+
+    &.has-green-color{
+        color: var(--color__green);
+    }
+
+    &.has-light-green-color{
+        color: var(--color__green--light);
+    }
+
+    &.has-blue-color{
+        color: var(--color__blue);
+    }
+
+    &.has-light-blue-color{
+        color: var(--color__blue--light);
+    }
+
+    &.has-yellow-color{
+        color: var(--color__yellow);
+    }
+
+    &.has-light-yellow-color{
+        color: var(--color__yellow--light);
     }
 }
