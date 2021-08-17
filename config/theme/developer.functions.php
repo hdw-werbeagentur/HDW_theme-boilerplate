@@ -33,16 +33,7 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 /********************************/
-// Adding debug class to body
-/********************************/
-function enable_theme_debug_body_class( $classes ) {
-    $classes[] = 'enable-debug';
-    return $classes;
-}
-add_filter( 'body_class','enable_theme_debug_body_class' );
-
-/********************************/
-// Adding debug class to body
+// Adding environment class to body
 /********************************/
 function theme_environment_body_class( $classes ) {
     $classes[] = 'environment-'.WP_ENV;
