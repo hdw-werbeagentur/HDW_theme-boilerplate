@@ -88,16 +88,9 @@ function themeDebug($var, $val){
         $debugEnabled = "true";
     }
 
-    function enable_theme_debug_body_class( $classes ) {
-        $classes[] = 'enable-debug';
-        return $classes;
-    }
-
-    add_filter( 'body_class','enable_theme_debug_body_class' );
-
     if( getBoolFromString($debugEnabled) ){
         echo '
-            <div class="container">
+            <div class="container" style="margin: 1.25rem 0;">
                 <div class="wp-block-columns are-vertically-aligned-top validation-message has-blue-color has-light-blue-background-color has-text-color has-background">
                     <div class="wp-block-column is-vertically-aligned-top validation-message__icon has-light-blue-color has-blue-background-color has-text-color has-background" style="flex-basis:3.25rem">
                         <p class="has-text-align-center">🚀</p>

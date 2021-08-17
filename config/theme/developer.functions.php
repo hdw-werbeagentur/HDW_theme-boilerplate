@@ -31,3 +31,11 @@ if( function_exists('acf_add_options_page') ) {
     add_action('acf/update_field_group', 'theme_settings_development_acf_json_saving', 1, 1);
 
 }
+
+// Adding debug class to body
+function enable_theme_debug_body_class( $classes ) {
+    $classes[] = 'enable-debug';
+    return $classes;
+}
+
+add_filter( 'body_class','enable_theme_debug_body_class' );

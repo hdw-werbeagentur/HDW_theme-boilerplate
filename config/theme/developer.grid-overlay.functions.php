@@ -2,9 +2,6 @@
 $setGridOverlay = false;
 $gridOverlaySetting = (get_field('hdw-theme-developer-setting__grid-overlay', 'option') ? get_field('hdw-theme-developer-setting__grid-overlay', 'option') : 'false');
 
-// Debug information for $gridOverlaySetting
-themeDebug('$gridOverlaySetting', $gridOverlaySetting);
-
 if( getBoolFromString($gridOverlaySetting) ){
     $setGridOverlay = true;
 }
@@ -13,7 +10,7 @@ if( isset($_GET["grid-overlay"]) && getBoolFromString( $_GET["grid-overlay"] ) )
     $setGridOverlay = true;
 }
 
-if( $gridOverlaySetting == "dev" && ( (strpos($_SERVER['HTTP_HOST'], '.test') !== false) || (strpos($_SERVER['HTTP_HOST'], 'local') !== false) ) ){
+if( $gridOverlaySetting == "dev" && ( WP_ENV == "local" ) ){
     $setGridOverlay = true;
 }
 
