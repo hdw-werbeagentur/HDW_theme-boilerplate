@@ -73,6 +73,10 @@ function getCssCustomProp($prop){
 ** ------------------------------------------------------------------------------
 **/
 function themeDebug($var, $val){
+    if(isset($_GET["debug"]) && ($_GET["debug"] == "false")){
+        return;
+    }
+
     if( class_exists('ACF') ) {
         $debugEnabled = (get_field('hdw-theme-developer-setting__debug-info', 'option') ? get_field('hdw-theme-developer-setting__debug-info', 'option') : 'false');
     }
@@ -83,6 +87,13 @@ function themeDebug($var, $val){
     if( isset($_GET["debug"]) && getBoolFromString( $_GET["debug"] ) ){
         $debugEnabled = "true";
     }
+
+    function enable_theme_debug_body_class( $classes ) {
+        $classes[] = 'enable-debug';
+        return $classes;
+    }
+
+    add_filter( 'body_class','enable_theme_debug_body_class' );
 
     if( getBoolFromString($debugEnabled) ){
         echo '
