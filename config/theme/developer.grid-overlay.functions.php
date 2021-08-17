@@ -2,6 +2,9 @@
 $setGridOverlay = false;
 $gridOverlaySetting = (get_field('hdw-theme-developer-setting__grid-overlay', 'option') ? get_field('hdw-theme-developer-setting__grid-overlay', 'option') : 'false');
 
+// Debug information for $gridOverlaySetting
+themeDebug('$gridOverlaySetting', $gridOverlaySetting);
+
 if( getBoolFromString($gridOverlaySetting) ){
     $setGridOverlay = true;
 }
@@ -50,7 +53,7 @@ function grid_overlay_css()
             background-position: 0 var(--baseline-shift);
             z-index: 1000;
             pointer-events: none;
-            opacity: 0.25;
+            opacity: 0.125;
         }
     </style>
  ";

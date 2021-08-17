@@ -19,11 +19,37 @@
             "endpoint": 0
         },
         {
+            "key": "field_611b5e6ee08f5",
+            "label": "Enable debug information",
+            "name": "hdw-theme-developer-setting__debug-info",
+            "type": "select",
+            "instructions": "Should debug informations be shown?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "true": "Enabled",
+                "false": "Disabled",
+                "dev": "On local development"
+            },
+            "default_value": "false",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_6105a90fda907",
             "label": "Content width",
             "name": "hdw-theme-developer-setting__content-width",
             "type": "number",
-            "instructions": "",
+            "instructions": "This value overwrites the value set in the theme functions.php",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -87,7 +113,7 @@
             },
             "choices": {
                 "true": "Enabled",
-                "false": "Disbaled",
+                "false": "Disabled",
                 "dev": "On local development"
             },
             "default_value": "false",
@@ -116,5 +142,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "[OPTIONS] Theme configuration related to the development processes",
-    "modified": 1628067155
+    "modified": 1629183749
 }
