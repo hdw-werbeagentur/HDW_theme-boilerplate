@@ -153,7 +153,7 @@ exports.js = js;
 
 function jsModule() {
     return gulp
-        .src(`${path.src}/modules/**/*.js`)
+        .src([`${path.src}/modules/**/*.js`,`!${path.src}/modules/**/node_modules/**/*.js`])
         .pipe(
             plugins.babel({
                 presets: ["@babel/preset-env"]
