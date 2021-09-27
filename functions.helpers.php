@@ -50,6 +50,7 @@ function getBoolFromString($test_var){
 ** ------------------------------------------------------------------------------
 **/
 function getCssCustomProp($prop){
+    $new_str = '';
     $lines_array = file(get_template_directory() . "/resources/scss/0-settings/_custom-properties.scss");
     foreach($lines_array as $line) {
         if(strpos($line, '--'.$prop.': #') !== false) {
