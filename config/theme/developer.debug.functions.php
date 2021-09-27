@@ -2,6 +2,9 @@
 /********************************/
 // Adding debug class to body
 /********************************/
+
+$debugEnabled = false;
+
 function enable_theme_debug_body_class( $classes ) {
     $classes[] = 'enable-debug';
     return $classes;
