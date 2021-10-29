@@ -16,12 +16,12 @@ const App = {
      * Bind events
      */
     bindings: function() {
-        App.toggleNavButton.click(function(e) {
+        App.toggleNavButton.on("click", function(e) {
             e.preventDefault();
             App.toggleNav();
         });
 
-        App.toggleSubNavButton.click(function(e) {
+        App.toggleSubNavButton.on("click", function(e) {
             if (!App.toggleNavButton.is(":visible")) return;
 
             e.preventDefault();
