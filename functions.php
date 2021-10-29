@@ -70,6 +70,7 @@ add_action('after_setup_theme', function () {
      * ------------------------------------------------------------------------------
      */
     (new Script('theme', get_template_directory_uri() . '/dist/js/app.min.js', ['jquery'], true, true))->register();
+    (new Script('embla-slider', get_template_directory_uri() . '/dist/vendor/embla-carousel/packages/embla-carousel/embla-carousel.umd.js', ['jquery'], true, true))->register();
     (new Style('sanitize-css', get_template_directory_uri() . '/dist/vendor/sanitize-css/sanitize.css'))->register();
     (new Style('theme', get_template_directory_uri() . '/dist/css/app.min.css', ['sanitize-css']))->register();
 
