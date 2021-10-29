@@ -21,6 +21,6 @@
     "sanitize-css": "^8.0.0"
   },
   "dependencies": {
-
-  }
+        "embla-carousel": "hdw-werbeagentur/embla-carousel#master"
+    }
 }
