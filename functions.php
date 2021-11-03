@@ -189,15 +189,6 @@ foreach (glob(get_template_directory() . '/config/gutenberg/*.php') as $filename
 
 /**
  * ------------------------------------------------------------------------------
- * Register modules
- * ------------------------------------------------------------------------------
- */
-foreach (glob(get_template_directory() . '/resources/modules/**/*.config.php') as $filename) {
-    include $filename;
-}
-
-/**
- * ------------------------------------------------------------------------------
  * Put project specific code in functions.custom.php
  * ------------------------------------------------------------------------------
  */
