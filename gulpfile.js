@@ -64,7 +64,9 @@ function sync(done) {
         files: [
             `${path.css.dest}/app.min.css`,
             `${path.js.dest}/app.min.js`,
-            `${path.img.dest}/**.*`
+            `${path.img.dest}/**.*`,
+            `${path.src}/modules/**/*.scss`,
+            `${path.src}/modules/**/*.js`
         ]
     });
 }
