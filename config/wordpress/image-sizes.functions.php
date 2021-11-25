@@ -8,4 +8,4 @@
      * ------------------------------------------------------------------------------
      */
 
-    (new ImageSize('name', __('Label', 'TEXTDOMAIN'), 50, 50, true))->register();
+    //(new ImageSize('name', __('Label', 'TEXTDOMAIN'), 50, 50, true))->register();
