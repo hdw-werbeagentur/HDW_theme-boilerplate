@@ -104,3 +104,78 @@
         // ],
     ]);
     add_theme_support('editor-styles');
+
+/**
+ * ------------------------------------------------------------------------------
+ * Acf color picker pa
+ *
+ * Define color picker palette based on the theme colors
+ * ------------------------------------------------------------------------------
+ */
+    function hdw_setting_acf_color_picker_palette() { ?>
+
+    <script type="text/javascript">
+        (function($) {
+            acf.add_filter('color_picker_args', function( args, $field ){
+                args.palettes = [
+                    '<?= preg_replace("/\s+/","",getCssCustomProp('color__primary')) ?>',
+                    '<?= preg_replace("/\s+/","",getCssCustomProp('color__secondary')) ?>',
+                    '<?= preg_replace("/\s+/","",getCssCustomProp('color__tertiary')) ?>',
+                    '<?= preg_replace("/\s+/","",getCssCustomProp('color__accent')) ?>',
+                    '<?= preg_replace("/\s+/","",getCssCustomProp('color__red')) ?>',
+                    '<?= preg_replace("/\s+/","",getCssCustomProp('color__red--light')) ?>',
+                    '<?= preg_replace("/\s+/","",getCssCustomProp('color__yellow')) ?>',
+                    '<?= preg_replace("/\s+/","",getCssCustomProp('color__yellow--light')) ?>',
+                    '<?= preg_replace("/\s+/","",getCssCustomProp('color__blue')) ?>',
+                    '<?= preg_replace("/\s+/","",getCssCustomProp('color__blue--light')) ?>',
+                    '<?= preg_replace("/\s+/","",getCssCustomProp('color__green')) ?>',
+                    '<?= preg_replace("/\s+/","",getCssCustomProp('color__green--light')) ?>'
+                ];
+
+                return args;
+            });
+        })(jQuery);
+    </script>
+
+    <style>
+        .iris-border {
+            max-width: 10rem;
+            height: auto !important;
+            padding: 0.625rem !important;
+        }
+       .iris-picker.iris-border .iris-picker-inner,
+       .iris-picker.iris-border .iris-palette-container{
+            position: static !important;
+        }
+        .iris-border .iris-picker-inner {
+            display: grid;
+            grid-template-columns: 83% 10%;
+            grid-gap: 0.625rem;
+        }
+        .iris-border .iris-picker-inner .iris-square {
+            width: 100% !important;
+            margin-right: 0rem !important;
+            float: none !important;
+        }
+        .iris-border .iris-picker-inner .iris-slider.iris-strip {
+            height: 100% !important;
+            width: 100% !important;
+            float: none !important;
+        }
+        .iris-border .iris-palette-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 0.3125rem;
+            margin-top: 0.625rem;
+        }
+        .iris-border .iris-palette-container .iris-palette {
+            float: none !important;
+            width: 100% !important;
+            height: 1.25rem !important;
+            margin: 0 !important;
+        }
+    </style>
+
+    <?php }
+
+    add_action('acf/input/admin_footer', 'hdw_setting_acf_color_picker_palette');
