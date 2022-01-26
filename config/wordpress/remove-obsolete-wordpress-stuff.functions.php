@@ -27,3 +27,13 @@
             return get_bloginfo('name');
         }
     );
+
+    // Remove obsolete wordpress stylings and add add required styles
+    add_action('enqueue_block_editor_assets', function () {
+        // Removes editor styles
+        wp_deregister_style('wp-reset-editor-styles');
+        // Add back key styles, there may be more
+        // change the path as needed
+        wp_enqueue_style('wp-block-editor-styles', '../../../wp/wp-includes/css/dist/block-editor/style.css', false);
+        wp_enqueue_style('wp-edit-post-styles', '../../../wp/wp-includes/css/dist/edit-post/style.css', false);
+    }, 102);
