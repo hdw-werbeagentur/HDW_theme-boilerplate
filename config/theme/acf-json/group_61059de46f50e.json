@@ -66,6 +66,52 @@
             "step": ""
         },
         {
+            "key": "field_61f54bcc0d836",
+            "label": "Enable remote images",
+            "name": "hdw-theme-developer-setting__remote-images",
+            "type": "true_false",
+            "instructions": "Should we load missing images from a remote server?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "load missing images from a remote server",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_61f54c080d837",
+            "label": "Remote images url",
+            "name": "hdw-theme-developer-setting__remote-images-url",
+            "type": "text",
+            "instructions": "Please define the remote server url (e.g.: https:\/\/theme.hdw.dev)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61f54bcc0d836",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_61059dee1e1ed",
             "label": "Grid Overlay",
             "name": "",
@@ -142,5 +188,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "[OPTIONS] Theme configuration related to the development processes",
-    "modified": 1629183749
+    "show_in_rest": 0,
+    "modified": 1643466053
 }
