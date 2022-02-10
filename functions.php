@@ -144,6 +144,10 @@ include get_template_directory() . '/config/wordpress/attachments-credits.functi
 // Enable some Wordpress security settings
 include get_template_directory() . '/config/wordpress/wordpress-security.functions.php';
 
+// Enable cache configuration to avoid caching on development & local environments
+include get_template_directory() . '/config/wordpress/cache-config.functions.php';
+
+
 /*
 * Configurable settings
 */
