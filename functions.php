@@ -141,6 +141,8 @@ add_action('after_setup_theme', function () {
 // Enable SMTP mailing via external smtp server
 include get_template_directory() . '/config/wordpress/attachments-credits.functions.php';
 
+// Enable some Wordpress security settings
+include get_template_directory() . '/config/wordpress/wordpress-security.functions.php';
 
 /*
 * Configurable settings
