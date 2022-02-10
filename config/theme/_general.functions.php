@@ -7,6 +7,7 @@ if( function_exists('acf_add_options_page') ) {
         'menu_title'	=> __('Theme Settings', 'TEXTDOMAIN'),
         'menu_slug' 	=> 'hdw-theme-settings',
         'capability'	=> 'edit_posts',
+        'position'      => '99.0',
         'icon_url'      => '',
         'redirect'		=> false
     ));

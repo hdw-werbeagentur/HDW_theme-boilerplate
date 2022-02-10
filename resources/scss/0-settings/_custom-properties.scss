@@ -90,6 +90,7 @@
     --adminbar__height--narrow: 32px;
     --adminbar__height: 46px;
     --global__radius: 0.3125rem;
+    --profile-image__border-radius: var(--global__radius);
 
     @media (--mobile) {
     }
@@ -128,6 +129,6 @@
         // Grid settings
         --grid__columns: 12;
         --grid__gap: calc(#{$global-grid-gap} * 2);
-        --grid__overlay--color: #009e55;
+        --grid__overlay--color: #4f9776;
     }
 }

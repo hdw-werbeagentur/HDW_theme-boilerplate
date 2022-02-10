@@ -93,9 +93,9 @@ add_action('after_setup_theme', function () {
      */
     register_nav_menus(
         [
-            'meta' => __('Metamenü', 'TEXTDOMAIN'),
-            'main' => __('Hauptmenü', 'TEXTDOMAIN'),
-            'footer' => __('Footermenü', 'TEXTDOMAIN'),
+            'meta' => __('Meta navigation', 'TEXTDOMAIN'),
+            'main' => __('Main navigation', 'TEXTDOMAIN'),
+            'footer' => __('Footer navigation', 'TEXTDOMAIN'),
         ]
     );
 

@@ -3,4 +3,25 @@
  */
 .content {
     flex: 1;
+
+    .entry__content{
+        > .wp-block-image,
+        > .wp-block-group,
+        > .wp-block-media-text,
+        > section {
+            &:not(.no__margin--top){
+                &,
+                &.force__margin--top:first-child{
+                    @extend %margin__top--large;
+                }
+            }
+
+            &:not(.no__margin--bottom){
+                &,
+                &.force__margin--bottom:last-child{
+                    @extend %margin__bottom--large;
+                }
+            }
+        }
+    }
 }

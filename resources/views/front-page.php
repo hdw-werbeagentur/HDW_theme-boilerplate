@@ -9,16 +9,9 @@
 
 
 /**
- * <head>
- */
-get_template_part('resources/views/template-parts/head', get_post_type());
-
-
-/**
  * Header
  */
-get_template_part('resources/views/template-parts/header', get_post_type());
-
+get_template_part('resources/views/header', 'front-page');
 
 /**
  * Content
@@ -33,13 +26,9 @@ get_template_part('resources/views/template-parts/header', get_post_type());
             <?php
             while (have_posts()) :
                 the_post();
-                get_template_part('resources/views/contents/content', get_post_type());
+                get_template_part('resources/views/contents/content', 'front-page');
             endwhile;
             ?>
-
-            <div class="container">
-                Main Theme
-            </div>
 
         </main>
 
@@ -51,4 +40,4 @@ get_template_part('resources/views/template-parts/header', get_post_type());
 /**
  * Footer
  */
-get_template_part('resources/views/footer', get_post_type());
+get_template_part('resources/views/footer', 'front-page');
