@@ -59,7 +59,12 @@ add_action('after_setup_theme', function () {
      * @see https://codex.wordpress.org/Content_Width
      * ------------------------------------------------------------------------------
      */
-    (new ContentWidth((get_field('hdw-theme-developer-setting__content-width', 'option') ? get_field('hdw-theme-developer-setting__content-width', 'option') : 980)))->register();
+    $contentWidth = 1440;
+    if( class_exists('ACF') ) {
+        $contentWidth = (get_field('hdw-theme-developer-setting__content-width', 'option') ? get_field('hdw-theme-developer-setting__content-width', 'option') : 980);
+    }
+
+    (new ContentWidth($contentWidth))->register();
 
 
     /**

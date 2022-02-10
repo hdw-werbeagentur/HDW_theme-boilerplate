@@ -63,6 +63,8 @@ function sync(done) {
         notify: false,
         files: [
             `${path.css.dest}/app.min.css`,
+            `${path.css.dest}/modules/**/*.min.css`,
+            `${path.js.dest}/modules/**/*.min.js`,
             `${path.js.dest}/app.min.js`,
             `${path.img.dest}/**.*`,
             `${path.src}/modules/**/*.scss`,

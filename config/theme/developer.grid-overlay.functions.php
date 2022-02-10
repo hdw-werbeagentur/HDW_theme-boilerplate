@@ -1,6 +1,8 @@
 <?php
 $setGridOverlay = false;
-$gridOverlaySetting = (get_field('hdw-theme-developer-setting__grid-overlay', 'option') ? get_field('hdw-theme-developer-setting__grid-overlay', 'option') : 'false');
+if( class_exists('ACF') ) {
+    $gridOverlaySetting = (get_field('hdw-theme-developer-setting__grid-overlay', 'option') ? get_field('hdw-theme-developer-setting__grid-overlay', 'option') : 'false');
+}
 
 if( $gridOverlaySetting == "true" ){
     $setGridOverlay = true;
