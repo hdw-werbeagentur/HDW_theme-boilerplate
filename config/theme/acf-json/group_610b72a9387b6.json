@@ -604,7 +604,7 @@
         },
         {
             "key": "field_61af642676ad6",
-            "label": "Straße",
+            "label": "Street",
             "name": "hdw-theme-setting__company-data--address-street",
             "type": "text",
             "instructions": "",
@@ -1059,5 +1059,5 @@
     "active": true,
     "description": "[OPTIONS] General theme configuration",
     "show_in_rest": 0,
-    "modified": 1643157198
+    "modified": 1643228045
 }
