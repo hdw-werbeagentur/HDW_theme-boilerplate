@@ -14,19 +14,6 @@
     remove_action('wp_head', 'rest_output_link_wp_head'); // Remove REST output link meta tag
     add_filter('the_generator', '__return_null'); // Remove generator output
     add_filter('login_headerurl', 'home_url'); // Replace the login logo link with home url
-    add_filter('wp_mail_from', function ($from) {
-        if (false !== strpos($from, 'wordpress@')) {
-            return $from;
-        }
-        return get_option('admin_email');
-    }); // Replace mail from with current admin email
-    // Replace mail from name with site name
-    add_filter(
-        'wp_mail_from_name',
-        function () {
-            return get_bloginfo('name');
-        }
-    );
 
     // Remove obsolete wordpress stylings and add add required styles
     add_action('enqueue_block_editor_assets', function () {
