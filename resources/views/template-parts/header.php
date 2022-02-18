@@ -1,6 +1,14 @@
 <a class="screen-reader-text" href="#main-navigation"><?php _e('Zum Inhalt', 'TEXTDOMAIN') ?></a>
 <a class="screen-reader-text" href="#main-navigation"><?php _e('Zum Hauptmenü', 'TEXTDOMAIN') ?></a>
 
+<?php
+
+// Load notification message
+get_template_part('resources/views/template-parts/header', 'notification');
+
+?>
+
+
 <header class="header" role="banner">
 
     <div class="header__container container">

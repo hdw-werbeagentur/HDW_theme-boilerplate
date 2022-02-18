@@ -3,6 +3,234 @@
     "title": "Theme Settings",
     "fields": [
         {
+            "key": "field_620f9f9714ff2",
+            "label": "General",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_620fa649b0ed4",
+            "label": "Notification Message",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "message": "This enables a small notification area above the header to display information to the user",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_620fa18414ff5",
+            "label": "Enable notification message",
+            "name": "hdw-theme-setting__general--notification-message",
+            "type": "true_false",
+            "instructions": "Check to display the notification message configuration:",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "Enable notification message",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_620fa07c14ff3",
+            "label": "Notification Message",
+            "name": "",
+            "type": "accordion",
+            "instructions": "Configure the notification message",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620fa18414ff5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_620fa2cf14ff6",
+            "label": "Notification message: Icon",
+            "name": "hdw-theme-setting__general--notification-message-icon",
+            "type": "image",
+            "instructions": "This option enables a small notification area above the header to display information to the user",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620fa18414ff5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_620fa2e514ff7",
+            "label": "Notification message: Border color",
+            "name": "hdw-theme-setting__general--notification-message-border-color Field",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__notice);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620fa18414ff5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_620fa2ff14ff8",
+            "label": "Notification message: Background color",
+            "name": "hdw-theme-setting__general--notification-message-background-color",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__notice--light);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620fa18414ff5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_620fa30d14ff9",
+            "label": "Notification message: Text color",
+            "name": "hdw-theme-setting__general--notification-message-text-color",
+            "type": "color_picker",
+            "instructions": "Overwrite the <span class=\"color-preview\" style=\"background: var(--color__notice--dark);\"><\/span> color defined in css",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620fa18414ff5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_620fa31d14ffa",
+            "label": "Notification message: Text",
+            "name": "hdw-theme-setting__general--notification-message-text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620fa18414ff5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_620fa09314ff4",
+            "label": "General end (Accordion)",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 1
+        },
+        {
             "key": "field_610b7363545fc",
             "label": "Color Settings",
             "name": "",
@@ -1059,5 +1287,5 @@
     "active": true,
     "description": "[OPTIONS] General theme configuration",
     "show_in_rest": 0,
-    "modified": 1643228045
+    "modified": 1645193666
 }
