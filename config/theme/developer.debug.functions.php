@@ -5,33 +5,38 @@
 
 $debugEnabled = false;
 
-function enable_theme_debug_body_class( $classes ) {
-    $classes[] = 'enable-debug';
-    return $classes;
-}
+function acf_enable_debug_configuration() {
+    global $debugEnabled;
 
-if( class_exists('ACF') ) {
-    $debugOption = (get_field('hdw-theme-developer-setting__debug-info', 'option') ? get_field('hdw-theme-developer-setting__debug-info', 'option') : false);
-}
-else{
-    $debugOption = false;
-}
+    function enable_theme_debug_body_class( $classes ) {
+        $classes[] = 'enable-debug';
+        return $classes;
+    }
 
-if($debugOption == "true"){
-    $debugEnabled = true;
-}
+    if( class_exists('ACF') ) {
+        $debugOption = (get_field('hdw-theme-developer-setting__debug-info', 'option') ? get_field('hdw-theme-developer-setting__debug-info', 'option') : false);
+    }
+    else{
+        $debugOption = false;
+    }
 
-if( $debugOption == "dev" &&  WP_ENV == "local"  ){
-    $debugEnabled = true;
-}
+    if($debugOption == "true"){
+        $debugEnabled = true;
+    }
 
-if( isset($_GET["debug"]) && $_GET["debug"] == "true" ){
-    $debugEnabled = true;
-}
+    if( $debugOption == "dev" &&  WP_ENV == "local"  ){
+        $debugEnabled = true;
+    }
 
-if($debugEnabled){
-    add_filter( 'body_class','enable_theme_debug_body_class' );
+    if( isset($_GET["debug"]) && $_GET["debug"] == "true" ){
+        $debugEnabled = true;
+    }
+
+    if($debugEnabled){
+        add_filter( 'body_class','enable_theme_debug_body_class' );
+    }
 }
+add_action( 'acf/init', 'acf_enable_debug_configuration' );
 
 
 /**
@@ -44,6 +49,7 @@ if($debugEnabled){
 ** Even objects and arrays would be displayed
 ** ------------------------------------------------------------------------------
 **/
+
 function themeDebug($var, $val){
     global $debugEnabled;
 

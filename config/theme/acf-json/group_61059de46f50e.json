@@ -36,7 +36,7 @@
                 "false": "Disabled",
                 "dev": "On local development"
             },
-            "default_value": "false",
+            "default_value": "dev",
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
@@ -162,7 +162,7 @@
                 "false": "Disabled",
                 "dev": "On local development"
             },
-            "default_value": "false",
+            "default_value": "dev",
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
@@ -189,5 +189,5 @@
     "active": true,
     "description": "[OPTIONS] Theme configuration related to the development processes",
     "show_in_rest": 0,
-    "modified": 1643466053
+    "modified": 1645187499
 }
