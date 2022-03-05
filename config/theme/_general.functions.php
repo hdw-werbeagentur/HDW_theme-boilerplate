@@ -12,6 +12,18 @@ if( function_exists('acf_add_options_page') ) {
         'redirect'		=> false
     ));
 
+    acf_add_options_sub_page(array(
+        'page_title' 	=> __('Module Settings', 'TEXTDOMAIN'),
+        'menu_title'	=> __('Module Settings', 'TEXTDOMAIN'),
+        'parent_slug'	=> 'hdw-theme-settings'
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title' 	=> __('Project Settings', 'TEXTDOMAIN'),
+        'menu_title'	=> __('Project Settings', 'TEXTDOMAIN'),
+        'parent_slug'	=> 'hdw-theme-settings'
+    ));
+
     /********************************/
     // Save and load plugin specific ACF field groups via the /acf-json folder.
     /********************************/
