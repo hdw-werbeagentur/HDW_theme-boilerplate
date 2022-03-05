@@ -82,6 +82,8 @@ add_action('after_setup_theme', function () {
     //(new Script('embla-slider', get_template_directory_uri() . '/dist/vendor/embla-carousel/packages/embla-carousel/embla-carousel.umd.js', ['jquery'], true, true))->register();
     //(new Script('embla-slider-autoplay', get_template_directory_uri() . '/dist/vendor/embla-carousel/packages/embla-carousel-autoplay/embla-carousel-autoplay.umd.js', ['jquery'], true, true))->register();
     //(new Script('embla-slider-class-names', get_template_directory_uri() . '/dist/vendor/embla-carousel/packages/embla-carousel-class-names/embla-carousel-class-names.umd.js', ['jquery'], true, true))->register();
+    // Load admin styles
+    (new AdminStyle('admin-styles', get_stylesheet_directory_uri() . '/dist/css/admin.min.css', []))->register();
 
     //  add_editor_style('dist/css/editor-styles.css');
 

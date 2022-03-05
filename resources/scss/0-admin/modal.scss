@@ -1,0 +1,100 @@
+
+.modaloverlay {
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  z-index: 0;
+  display: none;
+}
+
+.modaloverlay-close {
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  z-index: -1;
+  display: none;
+}
+
+.modaloverlay {
+  color: var(--color__text);
+
+  a {
+      color: var(--color__text);
+  }
+
+  &:target {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 99999;
+    align-items: center;
+    justify-content: center;
+
+    .modaloverlay-close {
+      display: block;
+      opacity: 1;
+      pointer-events: auto;
+      z-index: 99999;
+      z-index: 1;
+      cursor: default;
+    }
+  }
+
+  .modal {
+    background-color: white;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: auto;
+    z-index: 2;
+
+    > {
+      iframe, div {
+        border: none;
+        padding: 3em;
+        box-sizing: border-box;
+
+        img{
+          width: auto;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .close {
+    background-color: var(--color__white);
+    color: var(--color__black);
+    font-size: 24px;
+    padding: 8px 12px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 60em) {
+  .modaloverlay .modal {
+    height: 90%;
+    width: 90%;
+  }
+}
