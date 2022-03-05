@@ -91,6 +91,8 @@
     --adminbar__height: 46px;
     --global__radius: 0.3125rem;
     --profile-image__border-radius: var(--global__radius);
+    --max__width: 56.25rem;
+    --max__width--small: 43.75rem;
 
     @media (--mobile) {
     }
