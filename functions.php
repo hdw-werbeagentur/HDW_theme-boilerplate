@@ -75,9 +75,13 @@ add_action('after_setup_theme', function () {
      * ------------------------------------------------------------------------------
      */
     (new Script('theme', get_template_directory_uri() . '/dist/js/app.min.js', ['jquery'], true, true))->register();
-    (new Script('embla-slider', get_template_directory_uri() . '/dist/vendor/embla-carousel/packages/embla-carousel/embla-carousel.umd.js', ['jquery'], true, true))->register();
     (new Style('sanitize-css', get_template_directory_uri() . '/dist/vendor/sanitize-css/sanitize.css'))->register();
     (new Style('theme', get_template_directory_uri() . '/dist/css/app.min.css', ['sanitize-css']))->register();
+
+    //Embla Slider - uncomment the lines below to implement the slider and plugins
+    //(new Script('embla-slider', get_template_directory_uri() . '/dist/vendor/embla-carousel/packages/embla-carousel/embla-carousel.umd.js', ['jquery'], true, true))->register();
+    //(new Script('embla-slider-autoplay', get_template_directory_uri() . '/dist/vendor/embla-carousel/packages/embla-carousel-autoplay/embla-carousel-autoplay.umd.js', ['jquery'], true, true))->register();
+    //(new Script('embla-slider-class-names', get_template_directory_uri() . '/dist/vendor/embla-carousel/packages/embla-carousel-class-names/embla-carousel-class-names.umd.js', ['jquery'], true, true))->register();
 
     //  add_editor_style('dist/css/editor-styles.css');
 
