@@ -35,9 +35,11 @@ function color_overwrites_css_inline_css() {
     $color_overwrites_css .= "body {". PHP_EOL;
 
     foreach ($colors as $selector => $color) {
-        $colorValue = get_field('hdw-theme-setting__color-'.$color, 'option');
-        if( $colorValue != "" ){
-            $color_overwrites_css .= "--".$selector.": ".$colorValue.";". PHP_EOL;
+        if( class_exists('ACF') ) {
+            $colorValue = get_field('hdw-theme-setting__color-'.$color, 'option');
+            if( $colorValue != "" ){
+                $color_overwrites_css .= "--".$selector.": ".$colorValue.";". PHP_EOL;
+            }
         }
     }
 

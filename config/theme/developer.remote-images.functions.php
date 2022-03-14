@@ -1,4 +1,6 @@
 <?php
+ $enableRemoteImages = false;
+
 if(env('WP_ENV') == 'local') {
     if( class_exists('ACF') ) {
         $enableRemoteImages = (get_field('hdw-theme-developer-setting__remote-images', 'option') ? get_field('hdw-theme-developer-setting__remote-images', 'option') : false);
