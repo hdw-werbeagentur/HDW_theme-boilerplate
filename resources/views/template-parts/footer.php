@@ -19,44 +19,41 @@
 
 	<div class="footer__container container">
 
-		<?php
-		$socialMediaIcons = array();
+    <?php
+        $socialMediaIcons = array();
 
-		if(get_theme_mod('social-media-facebook') != "") $socialMediaIcons["facebook"] = get_theme_mod('social-media-facebook'); 
-		if(get_theme_mod('social-media-twitter') != "") $socialMediaIcons["twitter"] = get_theme_mod('social-media-twitter');
-		if(get_theme_mod('social-media-linkedin') != "") $socialMediaIcons["linkedin"] = get_theme_mod('social-media-linkedin');
-		if(get_theme_mod('social-media-google') != "") $socialMediaIcons["google"] = get_theme_mod('social-media-google');
-		if(get_theme_mod('social-media-xing') != "") $socialMediaIcons["xing"] = get_theme_mod('social-media-xing');
-		if(get_theme_mod('social-media-instagram') != "") $socialMediaIcons["instagram"] = get_theme_mod('social-media-instagram'); 
+        if (get_field('hdw-theme-setting__company-data--social-media', 'options'))  $socialMediaIcons = get_field('hdw-theme-setting__company-data--social-media', 'options');
 
-		if(count($socialMediaIcons) > 0) { ?>
-			<div class="footer__container--social-media">
+        if (count($socialMediaIcons) > 0) { ?>
+            <div class="footer__container--social-media">
 
-				<nav class="social-media-icon-navigation">
+                <nav class="social-media-icon-navigation">
 
-					<ul>
+                    <ul>
 
-						<?php
-                        foreach ($socialMediaIcons as $socialMediaIcon => $value) {
+                        <?php
+                        foreach ($socialMediaIcons as $socialMediaIcon) {
 
-                            if($value != "") {
-                                echo
-                                '<li class="social-media__icon--'.$socialMediaIcon.'">
-                                    <a href="'.$value.'" target="_blank">'
-                                        .$socialMediaIcon.
-                                    '</a>
+                            $cssClass = str_replace(' ', '', strtolower($socialMediaIcon['name']));
+                            $url = $socialMediaIcon['link']['url'];
+                            $target = $socialMediaIcon['link']['target'];
+                            $title = $socialMediaIcon['link']['title'];
+                            $icon =  wp_get_attachment_image($socialMediaIcon['icon']['ID']);
+                            echo
+                            '<li class="social-media__icon--' . $cssClass . '">
+                                    <a href="' . $url . '" target="' . $target . '" title="' . $title . '">'
+                                . $icon .
+                                '</a>
                                 </li>';
-                            }
-                             
                         }
-						?>
+                        ?>
 
-					</ul>
+                    </ul>
 
-				</nav>
+                </nav>
 
-			</div>
-		<?php } ?>
+            </div>
+        <?php } ?> 
 
 	    <div class="footer__container--logo">
 			<img src="<?php echo get_theme_mod('footer-logo') ?>" />
