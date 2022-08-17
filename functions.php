@@ -151,6 +151,9 @@ include get_template_directory() . '/config/wordpress/wordpress-security.functio
 // Enable cache configuration to avoid caching on development & local environments
 include get_template_directory() . '/config/wordpress/cache-config.functions.php';
 
+// Enable test environment in borlabs cookie if not in production
+include get_template_directory() . '/config/wordpress/borlabs-cookie.settings.function.php';
+
 
 /*
 * Configurable settings
