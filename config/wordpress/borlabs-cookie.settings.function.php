@@ -3,7 +3,7 @@ use BorlabsCookie\Cookie\Config;
 
 $pluginPath = 'borlabs-cookie/borlabs-cookie.php';
 
-if ( is_plugin_active( $pluginPath ) ) {
+if ( is_admin() && is_plugin_active( $pluginPath ) ) {
 
     $borlabsCookie = new Config();
     $borlabsCookieConfig = $borlabsCookie->getConfig();
