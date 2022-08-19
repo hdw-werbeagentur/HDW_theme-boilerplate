@@ -1,9 +1,7 @@
 <?php
 use BorlabsCookie\Cookie\Config;
 
-$pluginPath = 'borlabs-cookie/borlabs-cookie.php';
-
-if ( is_admin() && is_plugin_active( $pluginPath ) ) {
+if ( is_admin() && is_plugin_active( 'borlabs-cookie/borlabs-cookie.php' ) ) {
 
     $borlabsCookie = new Config();
     $borlabsCookieConfig = $borlabsCookie->getConfig();
