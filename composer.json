@@ -2,7 +2,7 @@
   "name": "hdw-werbeagentur/hdw-wordpress-theme",
   "description": "A WordPress Boilerplate Theme by HDW",
   "homepage": "https://www.hdw.dev",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "type": "wordpress-theme",
   "minimum-stability": "dev",
   "license": "MIT",
