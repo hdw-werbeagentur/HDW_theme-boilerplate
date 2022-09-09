@@ -37,7 +37,7 @@
     "ralfhortt/wp-content-width": "*"
   },
   "scripts": {
-    "post-create-project-cmd": "npm i && composer run-script copy-env && composer run replace-textdomain",
+    "post-create-project-cmd": "npm i --legacy-peer-deps && composer run-script copy-env && composer run replace-textdomain",
     "replace-textdomain": "DIR=$(basename $PWD); npm run process-replace \"TEXTDOMAIN\" \"${DIR}\" \"{config,resources}/**/*.{php,js,scss}\" && npm run process-replace \"TEXTDOMAIN\" \"${DIR}\" *.{php,js,scss,css} && npm run process-replace \"TEXTDOMAIN\" \"${DIR}\" \".env\";",
     "copy-env": "cp .env.example .env",
     "add-acf-module": [
