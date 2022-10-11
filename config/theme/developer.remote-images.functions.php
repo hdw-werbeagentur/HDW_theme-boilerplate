@@ -19,7 +19,7 @@ if(env('WP_ENV') == 'local') {
         return str_replace(WP_HOME, $remoteImagesUrl, $url);
     }
 
-    function hdw_replace_img_ssetrc_with_other_environment($sources){
+    function hdw_replace_img_srcset_with_other_environment($sources){
         global $remoteImagesUrl;
 
         foreach($sources as &$source)        {
