@@ -4,196 +4,222 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e65608501169ff981589037710bd916",
+    "content-hash": "8a2772d24b2ec5894bf4948d343c0aa1",
     "packages": [
         {
-            "name": "horttcore/wp-customizer",
-            "version": "dev-master",
+            "name": "hdw/wp-assets",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Horttcore/wp-customizer.git",
-                "reference": "f5cd6d6856692dfec705ec6ef3978135fa0bf700"
+                "url": "git@github.com:hdw-werbeagentur/wp-assets.git",
+                "reference": "721b493ab6a31fe612947516351cba76c38368fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Horttcore/wp-customizer/zipball/f5cd6d6856692dfec705ec6ef3978135fa0bf700",
-                "reference": "f5cd6d6856692dfec705ec6ef3978135fa0bf700",
-                "shasum": ""
+                "url": "https://api.github.com/repos/hdw-werbeagentur/wp-assets/zipball/721b493ab6a31fe612947516351cba76c38368fc",
+                "reference": "721b493ab6a31fe612947516351cba76c38368fc",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://hdw.repo.packagist.hdw.agency/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Horttcore\\Customizer\\": "src/"
+                    "HDW\\Assets\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://hdw.repo.packagist.hdw.agency/downloads",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Ralf Hortt",
-                    "email": "me@horttcore.de"
-                }
-            ],
-            "description": "A helper package for working with the WordPress Customizer",
-            "support": {
-                "issues": "https://github.com/Horttcore/wp-customizer/issues",
-                "source": "https://github.com/Horttcore/wp-customizer/tree/master"
-            },
-            "time": "2019-11-16T17:18:32+00:00"
-        },
-        {
-            "name": "ralfhortt/wp-assets",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Horttcore/wp-assets.git",
-                "reference": "00807bac5d30eeb82fb9ad3613c63f061ced9422"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Horttcore/wp-assets/zipball/00807bac5d30eeb82fb9ad3613c63f061ced9422",
-                "reference": "00807bac5d30eeb82fb9ad3613c63f061ced9422",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "RalfHortt\\Assets\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ralf Hortt",
-                    "email": "me@horttcore.de"
+                    "name": "Anthony Spross",
+                    "email": "a.spross@hdw1.de"
                 }
             ],
             "description": "A helper package for working with the WordPress assets",
             "support": {
-                "source": "https://github.com/Horttcore/wp-assets/tree/master"
+                "source": "https://github.com/hdw-werbeagentur/wp-assets/tree/2.0.0",
+                "issues": "https://github.com/hdw-werbeagentur/wp-assets/issues"
             },
-            "time": "2020-09-04T20:33:38+00:00"
+            "time": "2022-10-25T11:25:46+00:00"
         },
         {
-            "name": "ralfhortt/wp-content-width",
-            "version": "dev-master",
+            "name": "hdw/wp-content-width",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Horttcore/wp-content-width.git",
-                "reference": "d3b3f5a28935d04d8d66f020ccc1c52aa7e6cdbc"
+                "url": "git@github.com:hdw-werbeagentur/wp-content-width.git",
+                "reference": "32cfee17922fbbf3f1c2cc67faee132b67e3282e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Horttcore/wp-content-width/zipball/d3b3f5a28935d04d8d66f020ccc1c52aa7e6cdbc",
-                "reference": "d3b3f5a28935d04d8d66f020ccc1c52aa7e6cdbc",
-                "shasum": ""
+                "url": "https://api.github.com/repos/hdw-werbeagentur/wp-content-width/zipball/32cfee17922fbbf3f1c2cc67faee132b67e3282e",
+                "reference": "32cfee17922fbbf3f1c2cc67faee132b67e3282e",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://hdw.repo.packagist.hdw.agency/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "RalfHortt\\ContentWidth\\": "src/"
+                    "HDW\\ContentWidth\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://hdw.repo.packagist.hdw.agency/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
             "authors": [
                 {
-                    "name": "Ralf Hortt",
-                    "email": "me@horttcore.de"
+                    "name": "Anthony Spross",
+                    "email": "a.spross@hdw1.de"
                 }
             ],
             "description": "Setting the global WordPress variable `$content_width` in a single place for php and css",
             "support": {
-                "issues": "https://github.com/Horttcore/wp-content-width/issues",
-                "source": "https://github.com/Horttcore/wp-content-width/tree/1.4"
+                "source": "https://github.com/hdw-werbeagentur/wp-content-width/tree/1.4.0",
+                "issues": "https://github.com/hdw-werbeagentur/wp-content-width/issues"
             },
-            "time": "2020-01-16T13:36:22+00:00"
+            "time": "2022-10-25T11:43:16+00:00"
         },
         {
-            "name": "ralfhortt/wp-image-sizes",
-            "version": "dev-master",
+            "name": "hdw/wp-customizer",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Horttcore/wp-image-sizes.git",
-                "reference": "930188ee748a43f6e2ee70fc9a45d2aba974e593"
+                "url": "git@github.com:hdw-werbeagentur/wp-customizer.git",
+                "reference": "033d4fe93627414794aa0375ce80ef10e0c01679"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Horttcore/wp-image-sizes/zipball/930188ee748a43f6e2ee70fc9a45d2aba974e593",
-                "reference": "930188ee748a43f6e2ee70fc9a45d2aba974e593",
-                "shasum": ""
+                "url": "https://api.github.com/repos/hdw-werbeagentur/wp-customizer/zipball/033d4fe93627414794aa0375ce80ef10e0c01679",
+                "reference": "033d4fe93627414794aa0375ce80ef10e0c01679",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://hdw.repo.packagist.hdw.agency/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "RalfHortt\\ImageSizes\\": "src"
+                    "HDW\\Customizer\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://hdw.repo.packagist.hdw.agency/downloads",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthony Spross",
+                    "email": "a.spross@hdw1.de"
+                }
+            ],
+            "description": "A helper package for working with the WordPress Customizer",
+            "support": {
+                "source": "https://github.com/hdw-werbeagentur/wp-customizer/tree/2.1.0",
+                "issues": "https://github.com/hdw-werbeagentur/wp-customizer/issues"
+            },
+            "time": "2022-10-25T11:02:38+00:00"
+        },
+        {
+            "name": "hdw/wp-image-sizes",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:hdw-werbeagentur/wp-image-sizes.git",
+                "reference": "cb737eca41b939698f24ae198c5718e9638a76e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hdw-werbeagentur/wp-image-sizes/zipball/cb737eca41b939698f24ae198c5718e9638a76e4",
+                "reference": "cb737eca41b939698f24ae198c5718e9638a76e4",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://hdw.repo.packagist.hdw.agency/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HDW\\ImageSizes\\": "src"
+                }
+            },
+            "notification-url": "https://hdw.repo.packagist.hdw.agency/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
             "authors": [
                 {
-                    "name": "Ralf Hortt",
-                    "email": "me@horttcore.de"
+                    "name": "Anthony Spross",
+                    "email": "a.spross@hdw1.de"
                 }
             ],
             "description": "A helper class to register image sizes",
             "support": {
-                "issues": "https://github.com/Horttcore/wp-image-sizes/issues",
-                "source": "https://github.com/Horttcore/wp-image-sizes/tree/master"
+                "source": "https://github.com/hdw-werbeagentur/wp-image-sizes/tree/1.0.0",
+                "issues": "https://github.com/hdw-werbeagentur/wp-image-sizes/issues"
             },
-            "time": "2019-11-16T17:18:16+00:00"
+            "time": "2022-10-25T11:46:15+00:00"
         },
         {
-            "name": "ralfhortt/wp-template-loader",
-            "version": "dev-master",
+            "name": "hdw/wp-template-loader",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Horttcore/wp-template-loader.git",
-                "reference": "e0a8c24b10eb0cb0eb64d2c17c49ba7618862db2"
+                "url": "git@github.com:hdw-werbeagentur/wp-template-loader.git",
+                "reference": "2f6bbbd123a160209222bf80c31fb9b65c26dc6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Horttcore/wp-template-loader/zipball/e0a8c24b10eb0cb0eb64d2c17c49ba7618862db2",
-                "reference": "e0a8c24b10eb0cb0eb64d2c17c49ba7618862db2",
-                "shasum": ""
+                "url": "https://api.github.com/repos/hdw-werbeagentur/wp-template-loader/zipball/2f6bbbd123a160209222bf80c31fb9b65c26dc6f",
+                "reference": "2f6bbbd123a160209222bf80c31fb9b65c26dc6f",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://hdw.repo.packagist.hdw.agency/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "RalfHortt\\TemplateLoader\\": "src"
+                    "HDW\\TemplateLoader\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://hdw.repo.packagist.hdw.agency/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
             "authors": [
                 {
-                    "name": "Ralf Hortt",
-                    "email": "me@horttcore.de"
+                    "name": "Anthony Spross",
+                    "email": "a.spross@hdw1.de"
                 }
             ],
             "description": "A helper class to load template files from another location",
             "support": {
-                "issues": "https://github.com/Horttcore/wp-template-loader/issues",
-                "source": "https://github.com/Horttcore/wp-template-loader/tree/1.1.1"
+                "source": "https://github.com/hdw-werbeagentur/wp-template-loader/tree/1.1.1",
+                "issues": "https://github.com/hdw-werbeagentur/wp-template-loader/issues"
             },
-            "time": "2019-06-04T20:00:05+00:00"
+            "time": "2022-10-25T11:39:04+00:00"
         }
     ],
     "packages-dev": [],
@@ -204,5 +230,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.3.0"
 }
