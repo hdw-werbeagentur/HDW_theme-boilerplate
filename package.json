@@ -37,7 +37,7 @@
         "gulp-image": "^6.2.1",
         "gulp-load-plugins": "^2.0.4",
         "gulp-postcss": "^9.0.0",
-        "gulp-sass": "^4.1.0",
+        "gulp-sass": "^5.1.0",
         "gulp-sass-glob": "^1.1.0",
         "gulp-sourcemaps": "^2.6.5",
         "gulp-terser": "^1.4.0",
