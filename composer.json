@@ -29,12 +29,18 @@
       "functions.custom.php"
     ]
   },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://hdw.repo.packagist.hdw.agency"
+    }
+  ],
   "require": {
-    "horttcore/wp-customizer": "*",
-    "ralfhortt/wp-assets": "*",
-    "ralfhortt/wp-template-loader": "*",
-    "ralfhortt/wp-image-sizes": "*",
-    "ralfhortt/wp-content-width": "*"
+    "hdw/wp-customizer": "*",
+    "hdw/wp-assets": "*",
+    "hdw/wp-template-loader": "*",
+    "hdw/wp-image-sizes": "*",
+    "hdw/wp-content-width": "*"
   },
   "scripts": {
     "post-create-project-cmd": "npm i --legacy-peer-deps && composer run-script copy-env && composer run replace-textdomain",
