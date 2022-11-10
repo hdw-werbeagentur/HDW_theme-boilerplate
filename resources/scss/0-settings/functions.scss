@@ -1,0 +1,22 @@
+$html-font-size: 16px;
+
+@function stripUnit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+@function rem($pxValue) {
+    @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+}
+
+@function rel($minFontValue, $maxFontValue, $minWidthValue, $maxWidthValue) {
+    @return ($maxFontValue - $minFontValue) / ($maxWidthValue - $minWidthValue);
+}
+@function inter($minFontValue, $maxFontValue, $minWidthValue, $maxWidthValue) {
+    @return ( (-1 * $minWidthValue) * rel($minFontValue, $maxFontValue, $minWidthValue, $maxWidthValue) + $minFontValue) / #{stripUnit($html-font-size)};
+}
+@function prefValue($minFontValue, $maxFontValue, $minWidthValue, $maxWidthValue) {
+    @return #{inter($minFontValue, $maxFontValue, $minWidthValue, $maxWidthValue)}rem + #{rel($minFontValue, $maxFontValue, $minWidthValue, $maxWidthValue) * 100}vw;
+}
+@function calcClamp($minFontValue, $maxFontValue, $minWidthValue, $maxWidthValue) {
+    @return clamp(#{rem($minFontValue)}, #{prefValue($minFontValue, $maxFontValue, $minWidthValue, $maxWidthValue)}, #{rem($maxFontValue)});
+}
