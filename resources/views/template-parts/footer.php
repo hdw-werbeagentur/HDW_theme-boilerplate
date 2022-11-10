@@ -20,9 +20,8 @@
 	<div class="footer__container container">
 
     <?php
-        $socialMediaIcons = array();
-
-        if (get_field('hdw-theme-setting__company-data--social-media', 'options'))  $socialMediaIcons = get_field('hdw-theme-setting__company-data--social-media', 'options');
+        <?php
+        $socialMediaIcons = get_field('hdw-theme-setting__company-data--social-media', 'options') ?: [];
 
         if (count($socialMediaIcons) > 0) { ?>
             <div class="footer__container--social-media">
@@ -35,19 +34,16 @@
                         foreach ($socialMediaIcons as $socialMediaIcon) {
 
                             $cssClass = str_replace(' ', '', strtolower($socialMediaIcon['name']));
-                            $url = $socialMediaIcon['link']['url'];
-                            $target = $socialMediaIcon['link']['target'];
-                            $title = $socialMediaIcon['link']['title'];
-                            $icon =  wp_get_attachment_image($socialMediaIcon['icon']['ID']);
+                            isset($socialMediaIcon['link']['url']) ? $url = $socialMediaIcon['link']['url'] : $url = null;
+                            isset($socialMediaIcon['link']['target']) ? $target = $socialMediaIcon['link']['target'] : $target = null;
+                            isset($socialMediaIcon['link']['title']) ? $title = $socialMediaIcon['link']['title'] : $title = null;
+                            isset($socialMediaIcon['icon']['ID']) ? $icon =  wp_get_attachment_image($socialMediaIcon['icon']['ID']) : $icon = null;
                             echo
                             '<li class="social-media__icon--' . $cssClass . '">
-                                    <a href="' . $url . '" target="' . $target . '" title="' . $title . '">'
-                                . $icon .
-                                '</a>
-                                </li>';
+                                <a href="' . $url . '" target="' . $target . '" title="' . $title . '">'. $icon .'</a>
+                            </li>';
                         }
                         ?>
-
                     </ul>
 
                 </nav>
