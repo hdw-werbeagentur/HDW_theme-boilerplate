@@ -51,9 +51,18 @@
             </div>
         <?php } ?> 
 
-	    <div class="footer__container--logo">
-			<img src="<?php echo get_theme_mod('footer-logo') ?>" />
-	    </div>
+	<?php 
+        $companyLogo = get_field('hdw-theme-setting__company-data--logo', 'options') ?: []; 
+
+        if (count($companyLogo) > 0) :
+            isset($companyLogo) ? $logo_url = $companyLogo['url'] : $logo_url = null;
+        ?>
+
+            <div class="footer__container--logo">
+                <img src="<?= $logo_url ?>" />
+            </div>
+            
+        <?php endif; ?>
 
 	    <div class="footer__container--copyright">
 
