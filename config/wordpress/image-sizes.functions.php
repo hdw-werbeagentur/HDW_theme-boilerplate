@@ -1,5 +1,5 @@
 <?php
-    use \RalfHortt\ImageSizes\ImageSize;
+    use \HDW\ImageSizes\ImageSize;
 
 
     /**

@@ -1,5 +1,5 @@
 <?php
-    use \Horttcore\Customizer\Customize;
+    use \HDW\Customizer\Customize;
 
     /**
      * ------------------------------------------------------------------------------

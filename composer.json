@@ -1,53 +1,53 @@
 {
-  "name": "hdw-werbeagentur/hdw-wordpress-theme",
-  "description": "A WordPress Boilerplate Theme by HDW",
-  "homepage": "https://www.hdw.dev",
-  "version": "0.1.0",
-  "type": "wordpress-theme",
-  "minimum-stability": "dev",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Anthony Spross",
-      "email": "a.spross@hdw1.de",
-      "homepage": "https://www.hdw1.de/agentur/unser-team/anthony-spross/"
+    "name": "hdw-werbeagentur/hdw-wordpress-theme",
+    "description": "A WordPress Boilerplate Theme by HDW",
+    "homepage": "https://www.hdw.dev",
+    "version": "0.0.6",
+    "type": "wordpress-theme",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Anthony Spross",
+        "email": "a.spross@hdw1.de",
+        "homepage": "https://www.hdw1.de/agentur/unser-team/anthony-spross/"
+      },
+      {
+        "name": "Tobias Feld",
+        "email": "t.feld@hdw1.de",
+        "homepage": "https://www.hdw1.de/agentur/unser-team/tobias-feld/"
+      },
+      {
+        "name": "Sven Stuppi",
+        "email": "s.stuppi@hdw1.de",
+        "homepage": "https://www.hdw1.de/agentur/unser-team/sven-stuppi/"
+      }
+    ],
+    "repositories": [
+      {
+        "type": "composer",
+        "url": "https://hdw.repo.packagist.hdw.agency"
+      }
+    ],
+    "autoload": {
+        "files": [
+          "functions.helpers.php",
+          "functions.custom.php"
+        ]
     },
-    {
-      "name": "Tobias Feld",
-      "email": "t.feld@hdw1.de",
-      "homepage": "https://www.hdw1.de/agentur/unser-team/tobias-feld/"
+    "require": {
+        "hdw/wp-customizer": "*",
+        "hdw/wp-assets": "*",
+        "hdw/wp-template-loader": "*",
+        "hdw/wp-image-sizes": "*",
+        "hdw/wp-content-width": "*"
     },
-    {
-      "name": "Sven Stuppi",
-      "email": "s.stuppi@hdw1.de",
-      "homepage": "https://www.hdw1.de/agentur/unser-team/sven-stuppi/"
+    "scripts": {
+        "post-create-project-cmd": "npm i && composer run-script copy-env && composer run replace-textdomain",
+        "replace-textdomain": "DIR=$(basename $PWD); npm run process-replace \"TEXTDOMAIN\" \"${DIR}\" \"{config,resources}/**/*.{php,js,scss}\" && npm run process-replace \"TEXTDOMAIN\" \"${DIR}\" *.{php,js,scss,css} && npm run process-replace \"TEXTDOMAIN\" \"${DIR}\" \".env\";",
+        "copy-env": "cp .env.example .env",
+        "add-acf-module": [
+          "MODULE=$(read -p 'How should be the module named?: ' MODULENAME && echo $MODULENAME); (cd resources/modules/ && composer create-project --stability=DEV --remove-vcs hdw-werbeagentur/hdw-acf-module-boilerplate ${MODULE});"
+        ]
     }
-  ],
-  "autoload": {
-    "files": [
-      "functions.helpers.php",
-      "functions.custom.php"
-    ]
-  },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://hdw.repo.packagist.hdw.agency"
-    }
-  ],
-  "require": {
-    "hdw/wp-customizer": "*",
-    "hdw/wp-assets": "*",
-    "hdw/wp-template-loader": "*",
-    "hdw/wp-image-sizes": "*",
-    "hdw/wp-content-width": "*"
-  },
-  "scripts": {
-    "post-create-project-cmd": "npm i --legacy-peer-deps && composer run-script copy-env && composer run replace-textdomain",
-    "replace-textdomain": "DIR=$(basename $PWD); npm run process-replace \"TEXTDOMAIN\" \"${DIR}\" \"{config,resources}/**/*.{php,js,scss}\" && npm run process-replace \"TEXTDOMAIN\" \"${DIR}\" *.{php,js,scss,css} && npm run process-replace \"TEXTDOMAIN\" \"${DIR}\" \".env\";",
-    "copy-env": "cp .env.example .env",
-    "add-acf-module": [
-      "MODULE=$(read -p 'How should be the module named?: ' MODULENAME && echo $MODULENAME); (cd resources/modules/ && composer create-project --stability=DEV --remove-vcs hdw-werbeagentur/hdw-acf-module-boilerplate ${MODULE});"
-    ]
-  }
 }

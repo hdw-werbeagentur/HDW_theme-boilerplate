@@ -13,12 +13,12 @@
  * - Register new directory for WordPress template files
  * ------------------------------------------------------------------------------
  */
-use \RalfHortt\Assets\Script;
-use \RalfHortt\Assets\Style;
-use \RalfHortt\Assets\AdminStyle;
-use \RalfHortt\Assets\AdminScript;
-use \RalfHortt\ContentWidth\ContentWidth;
-use \RalfHortt\TemplateLoader\TemplateLocator;
+use \HDW\Assets\Script;
+use \HDW\Assets\Style;
+use \HDW\Assets\AdminStyle;
+use \HDW\Assets\AdminScript;
+use \HDW\ContentWidth\ContentWidth;
+use \HDW\TemplateLoader\TemplateLocator;
 
 /**
  * ------------------------------------------------------------------------------
