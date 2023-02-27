@@ -1,3 +1,7 @@
+# Bitte in Zukunft nur noch das [Private Theme Boilerplate](https://github.com/hdw-werbeagentur/HDW_wordpress-theme) verwenden! 
+
+
+
 ![https://www.hdw.dev](https://www.hdw1.de/hdw-werbeagentur/uploads/2021/07/hdw-wordpress-theme-boilerplate.jpg)
 
 [![CSS 3](https://img.shields.io/badge/CSS-3-2965f1?style=for-the-badge&logo=CSS3)](https://www.hdw.dev/hdw-wordpress-core/docs/requirements)
